@@ -19,4 +19,6 @@ Instead of commiting directly to master, please commit to a seperate branch and 
 - The Unionists are no longer UTI and are now "the Union of Iberian Workers" and "Iberianoplw Sindikatua"
 - Added Simm, Melon man, and Leveller as advisors for the Unionists.
 
+**To Do List:** https://docs.google.com/document/d/1GNZL2GHVsnRbtYvRVIH2M36Hd4kJUZnwHOqqAsziieQ/edit#
+
 
