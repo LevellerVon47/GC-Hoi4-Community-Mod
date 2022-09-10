@@ -11,10 +11,12 @@ git pull origin master <br />
 
 Works only if you haven't already initialized a git directory in your mods folder.
 
+Instead of commiting directly to master, please commit to a seperate branch and then once you're done and confirmed the mod does not crash on launch then create a pull request to merge it with master.
+
 ## Change log:
 - Removed the requirement for the La Resistance DLC in SPN - Player.txt
 - The tag for the Unionists has been changed from UTI to UOI
-- The Unionists are no longer Urinary Tract Infection and are now "the Union of Iberian Workers" and "Iberianoplw Sindikatua"
+- The Unionists are no longer UTI and are now "the Union of Iberian Workers" and "Iberianoplw Sindikatua"
 - Added Simm, Melon man, and Leveller as advisors for the Unionists.
 
 
