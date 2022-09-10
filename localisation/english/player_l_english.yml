@@ -15,9 +15,9 @@
   SKS_DEF:0 "Ophite Iberianoplw"
   SKS_ADJ:0 "Iberianoplwian"
 
-  UTI:0 "Unión de Trabajadores Iberianoplwes"
-  UTI_DEF:0 "the Unión de Trabajadores Iberianoplwes"
-  UTI_DEF:0 "Iberianoplwian"  
+  UOI:0 "Iberianoplw Sindikatua"
+  UOI_DEF:0 "Iberianoplw Sindikatua"
+  UOI_DEF:0 "Iberianoplwian"  
 
  SPN_civil_war:0 "The Iberianoplwian Civil War has Started"
 
@@ -144,14 +144,14 @@
  SPN_centre_of_learning_desc:0 "Barcelona has become a center for knowledge and wisdom. No longer is Iberian just heard in its halls, but French, English and many other languages echo through its corridors and in its great lecture halls. It is truly a symbol of the new Iberia. An Iberia of freedom and knowledge"
  SPN_parlimentary_reform:0 "Accountability Reforms"
  SPN_parlimentary_reform_desc:0 "Every nation must be accountable to the people. And no better accountability than the ability for the government to always be hauled before the representatives and deputies and put to question for their actions or lack thereof. What better indeed."
- SPN_UTI:0 "Bend to the UTI"
- SPN_UTI_desc:0 "The unions form a bedrock for our workers. Their influence too stretches not just to the workplace, but into the homes and even into the halls of power where we reside. Dislike it, and disdain them as we must, we must bend to their demands lest the country collapses."
+ SPN_UOI:0 "Bend to the Union of Iberian Workers"
+ SPN_UOI_desc:0 "The unions form a bedrock for our workers. Their influence too stretches not just to the workplace, but into the homes and even into the halls of power where we reside. Dislike it, and disdain them as we must, we must bend to their demands lest the country collapses."
  SPN_relocate_weapons_depots:0 "'Relocate' Weapons"
  SPN_relocate_weapons_depots_desc:0 "There are so many weapons that occasionally get lost in the scuffle of transit. Not just the small knives, but even rifles might from time to time fall off the truck or train car. And all the while, everyone fails to recognize that they might end up in much more capable hands. Unionite hands that will use them."
  SPN_reorganize_infrastructure:0 "Reorganize Railway Tables"
  SPN_reorganize_infrastructure_desc:0 "The railway network has always been a powerful tool of the high and mighty. It will also be a powerful tool for us. A few reorganizations here and there and we will able to move around unseen, and undetected. And they will all be fooled until it is too late."
  SPN_collectivize_factories:0 "Collectivize Workplaces"
- SPN_collectivize_factories_desc:0 "The factories of the industrialists stand idle, producing only for themselves, rather for the common good, or for the People. The UTI, once it has taken control of them will put put them to much better use than whatever immoral purpose they were using them for."
+ SPN_collectivize_factories_desc:0 "The factories of the industrialists stand idle, producing only for themselves, rather for the common good, or for the People. The UOI, once it has taken control of them will put put them to much better use than whatever immoral purpose they were using them for."
  SPN_revolutionary_zeal:0 "Ready for Anything!"
  SPN_revolutionary_zeal_desc:0 "The workers stand ready to fight. We have the arms and the people to rise up against the oppressors and their cronies. Once the starting signal sounds, we will be ready to fight the good fight, and we will be right."
  SPN_help_from_byzantium:0 "Look to the East"
@@ -379,7 +379,7 @@
  SPN.1.D:0 "Following growing discontent over the debt crisis, Ophite and Unionite militias have risen up in the streets. This morning, the Queen faced an assassination attempt which was nearly successful. In response, government forces began a violent crackdown against anti-government forces, leading to their declaration of independent states. With this move, the Iberian Civil war has begun."
  SPN.1.a:0 "The great serpent shall guide usssss to victory!"
  SPN.1.b:0 "The Queen and her Parliament stand united against the traitors!"
- SPN.1.c:0 "¡Viva la UTI!"
+ SPN.1.c:0 "¡Viva la UOI!"
  
  SPN.3.T:0 "Byzantine Aid"
  SPN.3.D:0 "Byzantium has decided to provide aid for us in the Civil War."
@@ -409,7 +409,7 @@
  SPN.20.d:0 "To those who might read this in Iberianoplw.\n\nThus passes the glory of the world and we leave Iberianoplw changed forver. And from all of us who have worked on this section of the Grand Campaign, thank you for being with us all, and we hope that all of you out there, players and watchers alike have enjoyed what we made. It has been hard, it has been fun and it has been very exciting to help bring all this to fruitition. As this chapter of the history of Iberianoplw comes to a close, it is time for the next chapter to reveal itself amongst the Stars.\n\nOnce more, from all of us\n\nAlexanderBoesen, Augenis, Featherus0, Fer D. Zero, idhrendur, Indyclone77, JERRY_XLII, Matoro, Midgeman, Mordred Viking, Particleboy04, Snes, Scars and VoidTemplar\n\nPS: Giraffes are heartless creatures."
  SPN.20.a:0 "Who are those?"
 
- UNION_COLLECTIVE_ASSEMBLY_DESC:0 "The Union Collective Assembly is the govenring body of the UTI. It is made up of delagates who represent various industrial interests."
+ UNION_COLLECTIVE_ASSEMBLY_DESC:0 "The Union Collective Assembly is the govenring body of the UOI. It is made up of delagates who represent various industrial interests."
  PENELOPE_DESC:0 "The reign of Queen Penelope IV Byzantius begain in 1931 with great turmoil - you guessed it - more debt. Her reign has seen increasing radicalization of factions and a slow erosion of state power. She is currently head of the Parlimentarian Coaliton between Monarchists and Senatorialists, who seek to preserve the current structure of the state."
  SERPIENTE_DESC:0 "Dr. Serpiente, or simply 'The Doctor', is an Ophite figurehead and reigns supreme over the Iberian movement. Nobody is quite sure where he came from, though some speculate he is not of this world. Whether or not the speculation is accurate, The Doctor maintains an iron grip over his country."
  WAR_COUNCIL_DESC:0 "The Senatorial War Council has taken over the Republic of Spain, removing whom they see as an incompetent Queen from power. Despite this, they remain cooperative with Monarchists, and hope to one day relinquish power to whichever body the people choose."

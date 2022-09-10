@@ -22,7 +22,7 @@ SPR_scw_in_progress = {
 		SKS = {
 			has_civil_war = yes
 		}
-		UTI = {
+		UOI = {
 			has_civil_war = yes
 		}
 	}

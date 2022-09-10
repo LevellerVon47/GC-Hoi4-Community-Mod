@@ -11583,7 +11583,7 @@ focus_tree = {
 			}
 			else = {
 				any_other_country = {
-					original_tag = UTI
+					original_tag = UOI
 					has_civil_war = yes
 					NOT = { has_war_with = ROOT }
 					OR = {
@@ -11603,7 +11603,7 @@ focus_tree = {
 			
 			random_country = {
 				limit = {
-					original_tag = UTI
+					original_tag = UOI
 					has_civil_war = yes
 					OR = {
 						has_government = communism

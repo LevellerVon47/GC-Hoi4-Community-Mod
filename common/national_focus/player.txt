@@ -9,7 +9,7 @@ focus_tree = {
 			OR = {
 				tag = SPN
 				tag = SKS
-				tag = UTI
+				tag = UOI
 			}
 			
 		}
@@ -34,7 +34,7 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = SPN_the_kings_parliment
-			focus = SPN_UTI
+			focus = SPN_UOI
 		}
 
 		allow_branch = {
@@ -235,7 +235,7 @@ focus_tree = {
 					}
 				}
 			}
-			UTI = {
+			UOI = {
 				every_owned_state = {
 					create_unit = {
 						division = "division_template = \"Snake Columnist Brigade\" start_experience_factor = 0	start_equipment_factor = 1"
@@ -1593,7 +1593,7 @@ focus_tree = {
 
 		mutually_exclusive = {
 			focus = SPN_cult_of_ophitism
-			focus = SPN_UTI
+			focus = SPN_UOI
 		}
 
 		allow_branch = {
@@ -3707,7 +3707,7 @@ focus_tree = {
 
 	###### UNIONIST PATH ######
 	focus = {
-		id = SPN_UTI
+		id = SPN_UOI
 		icon = GFX_focus_por_workers_of_iberia
 		x = 35
 		y = 0
@@ -3735,7 +3735,7 @@ focus_tree = {
 				NOT = {
 					has_global_flag = SPN_civil_war
 				}
-				TAG = UTI
+				TAG = UOI
 			}
 		}
 
@@ -3762,9 +3762,9 @@ focus_tree = {
 			has_global_flag = SPN_civil_war
 		}
 
-		relative_position_id = SPN_UTI
+		relative_position_id = SPN_UOI
 		prerequisite = {
-			focus = SPN_UTI
+			focus = SPN_UOI
 		}
 
 		completion_reward = {
@@ -3946,7 +3946,7 @@ focus_tree = {
 		}
 
 		completion_reward = {
-			unlock_decision_category_tooltip = UTI_aid_decisions
+			unlock_decision_category_tooltip = UOI_aid_decisions
 			add_equipment_to_stockpile = {
 				type = convoy
 				amount = 35
@@ -3979,7 +3979,7 @@ focus_tree = {
 	}
 
 	focus = {
-		id = SPN_UTI_win_war
+		id = SPN_UOI_win_war
 		icon = GFX_focus_prc_agrarian_socialism
 
 		x = 0
@@ -4001,7 +4001,7 @@ focus_tree = {
 		}
 	}
 
-	# UTI ecoonomic path
+	# UOI ecoonomic path
 	focus = {
 		id = SPN_lift_the_burden
 		icon = GFX_focus_generic_industry_1
@@ -4009,9 +4009,9 @@ focus_tree = {
 		x = -2
 		y = 1
 
-		relative_position_id = SPN_UTI_win_war
+		relative_position_id = SPN_UOI_win_war
 		prerequisite = {
-			focus = SPN_UTI_win_war
+			focus = SPN_UOI_win_war
 		}
 
 		cost = 10
@@ -4179,9 +4179,9 @@ focus_tree = {
 		x = 0
 		y = 1
 
-		relative_position_id = SPN_UTI_win_war
+		relative_position_id = SPN_UOI_win_war
 		prerequisite = {
-			focus = SPN_UTI_win_war
+			focus = SPN_UOI_win_war
 		}
 
 		cost = 10
@@ -4222,9 +4222,9 @@ focus_tree = {
 		x = 2
 		y = 1
 
-		relative_position_id = SPN_UTI_win_war
+		relative_position_id = SPN_UOI_win_war
 		prerequisite = {
-			focus = SPN_UTI_win_war
+			focus = SPN_UOI_win_war
 		}
 
 		cost = 15
@@ -4554,7 +4554,7 @@ focus_tree = {
 						original_tag = MOR
 						has_government = communism
 					}
-					UTI = {
+					UOI = {
 						add_to_faction = PREV
 					}
 				}
@@ -4563,7 +4563,7 @@ focus_tree = {
 						original_tag = ALG
 						has_government = communism
 					}
-					UTI = {
+					UOI = {
 						add_to_faction = PREV
 					}
 				}
@@ -4610,7 +4610,7 @@ focus_tree = {
 					}
 				}
 				NGR = {
-					UTI = {
+					UOI = {
 						add_to_faction = NGA
 					}
 					hidden_effect = {
@@ -4624,7 +4624,7 @@ focus_tree = {
 					}
 				}
 				MLI = {
-					UTI = {
+					UOI = {
 						add_to_faction = MLI
 					}
 					hidden_effect = {
@@ -4638,7 +4638,7 @@ focus_tree = {
 					}
 				}
 				IVO = {
-					UTI = {
+					UOI = {
 						add_to_faction = IVO
 					}
 					hidden_effect = {

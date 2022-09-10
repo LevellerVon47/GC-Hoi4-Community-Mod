@@ -65,7 +65,7 @@ SKS = {
 	color = rgb { 184 128 72 }
 	color_ui = rgb { 209 169 130 }
 }
-UTI = {
+UOI = {
 	color = rgb { 255 111 82 }
 	color_ui = rgb { 255 202 122 }
 }

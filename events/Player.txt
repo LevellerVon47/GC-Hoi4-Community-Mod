@@ -41,10 +41,10 @@ country_event = { #Begin the civil war
 					is_core_of = SPN
 				}
 				add_core_of = SKS
-				add_core_of = UTI
+				add_core_of = UOI
 			}
 
-			##Make UTI
+			##Make UOI
 			#Give them their states
 			every_owned_state = {
 				limit = {
@@ -61,12 +61,12 @@ country_event = { #Begin the civil war
 					}
 				}
 
-				transfer_state_to = UTI
+				transfer_state_to = UOI
 			}
 
 			#Transfer some generals 
 
-			UTI = {
+			UOI = {
 				#Spawn divisions in states
 				division_template = {
 					name = "Guarnición Colectivista"
@@ -146,11 +146,17 @@ country_event = { #Begin the civil war
 				}
 
 				#Mark focuses done
-				unlock_national_focus = SPN_UTI
+				unlock_national_focus = SPN_UOI
 				unlock_national_focus = SPN_relocate_weapons_depots
 
 				#Give national spirits
 				add_ideas = SPN_disorganized_army
+
+				#adivsors & generals
+
+				recruit_character = SPN_simm
+				recruit_character = SPN_leveller
+				recruit_character = SPN_melon_man
 			}
 
 
@@ -363,12 +369,12 @@ country_event = { #Begin the civil war
 				}
 				send_equipment_fraction = {
 					value = 0.45
-					target = UTI
+					target = UOI
 				}
 			}
 			else = {
 				send_equipment_fraction = {
-					target = UTI
+					target = UOI
 					value = 0.33
 				}
 			}
@@ -384,17 +390,17 @@ country_event = { #Begin the civil war
 			}
 			add_civil_war_target = SKS
 			declare_war_on = {
-				target = UTI
+				target = UOI
 				type = civil_war
 			}
-			add_civil_war_target = UTI
+			add_civil_war_target = UOI
 
 			SKS = {
 				declare_war_on = {
-					target = UTI
+					target = UOI
 					type = civil_war
 				}
-				add_civil_war_target = UTI
+				add_civil_war_target = UOI
 			}
 		}
 	}
@@ -421,7 +427,7 @@ country_event = { #Begin the civil war
 			NOT = {
 				OR = {
 					has_completed_focus = SPN_cult_of_ophitism
-					has_completed_focus = SPN_UTI
+					has_completed_focus = SPN_UOI
 				}
 			}
 		}
@@ -429,7 +435,7 @@ country_event = { #Begin the civil war
 
 	option = { #Ophite option
 		name = SPN.1.c
-		trigger = { has_completed_focus = SPN_UTI }
+		trigger = { has_completed_focus = SPN_UOI }
 		hidden_effect = {
 			SPN = {
 				unlock_national_focus = SPN_the_kings_parliment
@@ -437,7 +443,7 @@ country_event = { #Begin the civil war
 			}
 		}
 
-		UTI = {
+		UOI = {
 			change_tag_from = ROOT
 		}
 	}
@@ -456,19 +462,19 @@ country_event = { #Petition Byzantium for aid
 		send_equipment = {
 			equipment = infantry_equipment
 			amount = 1500
-			target = UTI
+			target = UOI
 		}
 		send_equipment = {
 			equipment = artillery_equipment
 			amount = 40
-			target = UTI
+			target = UOI
 		}
 
 		ai_chance = {
 			factor = 20
 		}
 
-		UTI = {
+		UOI = {
 			country_event = {
 				id = SPN.3
 				days = 5
@@ -483,7 +489,7 @@ country_event = { #Petition Byzantium for aid
 			factor = 0
 		}
 
-		UTI = {
+		UOI = {
 			country_event = {
 				id = SPN.4
 				days = 5
@@ -608,7 +614,7 @@ country_event = { #End of civil war
 		OR = {
 			tag = SPN
 			tag = SKS
-			tag = UTI
+			tag = UOI
 		}
 		has_global_flag = SPN_civil_war
 		has_civil_war = no		
@@ -654,7 +660,7 @@ country_event = { #End of civil war
 	
 			else_if = {
 				limit = {
-					tag = UTI
+					tag = UOI
 				}
 	
 				delete_units = {
@@ -785,11 +791,11 @@ country_event = { #End of civil war
 			complete_national_focus = SPN_SPN_win_war
 		}
 		else = {
-			# tag = UTI
+			# tag = UOI
 			add_ideas = SPN_national_debt
 			add_ideas = SPN_government_confustion
 			remove_ideas = SPN_disorganized_army
-			complete_national_focus = SPN_UTI_win_war
+			complete_national_focus = SPN_UOI_win_war
 		}
 	}
 }

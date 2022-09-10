@@ -127,5 +127,73 @@ characters={
 			logistics_skill=4
 		}
 	}
-	
+
+	#####################
+	##Senate Characters##
+    #####################
+
+	#Unionist Characters
+
+	SPN_simm = {
+		name = "Simm"
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SPN_simm
+			traits = { silver_tongued_diplomat watermelon_farmer }
+			cost = 100
+			#available = { #This is for when we add in a monarcho-unionist path in the focus tree
+			#	OR = {
+			#		AND = {
+			#			original_tag = SPN
+			#			has_completed_focus = unionists_in_government
+			#		}
+			#		tag = UOI
+			#	}
+			#}
+		}
+	}
+	SPN_melon_man = {
+		name = "Melon Man"
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SPN_melon_man
+			traits = { silent_workhorse watermelon_farmer }
+			cost = 100
+			#available = { #This is for when we add in a monarcho-unionist path in the focus tree
+			#	OR = {
+			#		AND = {
+			#			original_tag = SPN
+			#			has_completed_focus = unionists_in_government
+			#		}
+			#		tag = UOI
+			#	}
+			#}
+		}
+	}
+	SPN_leveller = {
+		name = "Vice Farmer Leveller von 47"
+
+		advisor = {
+			slot = political_advisor
+			idea_token = SPN_leveller
+			traits = { unionist_propogandist watermelon_farmer }
+			cost = 100
+			#available = { #This is for when we add in a monarcho-unionist path in the focus tree
+			#	OR = {
+			#		AND = {
+			#			original_tag = SPN
+			#			has_completed_focus = unionists_in_government
+			#		}
+			#		tag = UOI
+			#	}
+			#}
+		}
+	}
+
+	}
+	SPN_kona = {
+
+	}
 }

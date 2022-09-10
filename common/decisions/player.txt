@@ -1,4 +1,4 @@
-UTI_aid_decisions = {
+UOI_aid_decisions = {
 	guns_from_byzantium = {
 		icon = generic_industry
 
@@ -26,7 +26,7 @@ UTI_aid_decisions = {
 				send_equipment = {
 					equipment = infantry_equipment
 					amount = 1000
-					target = UTI
+					target = UOI
 				}
 				add_equipment_to_stockpile = {
 					type = convoy
@@ -68,7 +68,7 @@ UTI_aid_decisions = {
 				send_equipment = {
 					equipment = artillery_equipment
 					amount = 35
-					target = UTI
+					target = UOI
 				}
 				add_equipment_to_stockpile = {
 					type = convoy
