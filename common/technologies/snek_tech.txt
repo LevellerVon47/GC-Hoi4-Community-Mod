@@ -1,0 +1,473 @@
+technologies = {
+
+	@1936 = -1
+	@1937 = 1
+	@1938 = 3
+	@1939 = 5
+	@1940 = 7
+	@1941 = 9
+	@1942 = 11
+	@1943 = 13
+	@1944 = 15
+	@1945 = 17
+
+	@ray_cannon = 2
+	@ray_gun = 4
+	@robot = 8
+	@light_mech = 12
+	@medium_mech = 15
+	@heavy_mech = 18
+	@grav_bomber = 13
+	@grav_fighter = 17
+	@power_armor = 22
+
+	energy_cannon = {
+		research_cost = 2.0
+		start_year = 1936
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_subunits = {
+			# <unit>
+			# allow for energy cannon brigade
+			energy_artillery
+		}
+
+		enable_equipments = {
+			energy_artillery_equipment_0
+		}
+
+		dependencies = {
+			ray_gun_unlock = 1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = 3
+				y = @1936
+			}
+		}
+
+		path = {
+			leads_to_tech = improved_ray_cannon
+			research_cost_coeff = 1.0
+		}
+
+		path = {
+			leads_to_tech = basic_ray_guns
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			artillery
+			snek_tech
+		}
+	}
+
+	improved_ray_cannon = {
+		research_cost = 2.0
+		start_year = 1939
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			# <equipment_token>
+			# allow for experimental energy cannons to be produced
+			energy_artillery_equipment_1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @ray_cannon
+				y = @1939
+			}
+		}
+
+		path = {
+			leads_to_tech = advanced_ray_cannon
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			artillery
+			snek_tech
+		}
+	}
+
+	advanced_ray_cannon = {
+		research_cost = 2.0
+		start_year = 1943
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			# <equipment_token>
+			# allow for experimental energy cannons to be produced
+			energy_artillery_equipment_2
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @ray_cannon
+				y = @1943
+			}
+		}
+
+		categories = {
+			artillery
+			snek_tech
+		}
+	}
+
+	basic_ray_guns = {
+		research_cost = 2.0
+		start_year = 1937
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_subunits = {
+			energy_infantry
+		}
+
+		enable_equipments = {
+			raygun_equipment_1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @ray_gun
+				y = @1937
+			}
+		}
+
+		path = {
+			leads_to_tech = advanced_ray_guns
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			infantry_weapons
+			snek_tech
+		}
+	}
+
+	advanced_ray_guns = {
+		research_cost = 2.0
+		start_year = 1941
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			raygun_equipment_2
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @ray_gun
+				y = @1941
+			}
+		}
+
+		categories = {
+			infantry_weapons
+			snek_tech
+		}
+	}
+	
+	robotic_experiments = {
+		research_cost = 2.0
+		start_year = 1938
+
+		production_factory_max_efficiency_factor = 0.15
+		industrial_capacity_factory = 0.2
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @robot
+				y = @1938
+			}
+		}
+		
+		dependencies = {
+			robot_unlock = 1
+		}
+
+		path = {
+			leads_to_tech = artificial_intelligence
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			cat_production
+			snek_tech
+		}
+	}
+
+	artificial_intelligence = {
+		research_cost = 2.0
+		start_year = 1940
+
+		research_speed_factor = 0.25
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @robot
+				y = @1940
+			}
+		}
+
+		path = {
+			leads_to_tech = robot_infantry
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			electronics
+			snek_tech
+		}
+	}
+
+	anti_gravity_experiments = {
+		research_cost = 2.0
+		start_year = 1937
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+		
+		enable_equipments = {
+			flying_saurcer_bomber_equipment_0
+		}
+		
+		dependencies = {
+			anti_grav_unlock = 1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = 15
+				y = @1937
+			}
+		}
+
+		path = {
+			leads_to_tech = anti_grav_bomber
+			research_cost_coeff = 1.0
+		}
+
+		path = {
+			leads_to_tech = anti_grav_fighter
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			snek_tech
+			air_equipment
+		}
+	}
+
+	anti_grav_bomber = {
+		research_cost = 2.0
+		start_year = 1940
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			flying_saurcer_bomber_equipment_1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @grav_bomber
+				y = @1940
+			}
+		}
+
+		path = {
+			leads_to_tech = advanced_anti_grav_bomber
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			tactical_bomber
+			snek_tech
+			air_equipment
+		}
+	}
+
+	advanced_anti_grav_bomber = {
+		research_cost = 2.0
+		start_year = 1944
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			flying_saurcer_bomber_equipment_2
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @grav_bomber
+				y = @1944
+			}
+		}
+
+		categories = {
+			tactical_bomber
+			snek_tech
+			air_equipment
+		}
+	}
+
+	anti_grav_fighter = {
+		research_cost = 2.0
+		start_year = 1940
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			flying_saurcer_fighter_equipment_1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @grav_fighter
+				y = @1940
+			}
+		}
+
+		path = {
+			leads_to_tech = advanced_anti_grav_fighter
+			research_cost_coeff = 1.0
+		}
+
+		categories = {
+			cat_heavy_fighter
+			snek_tech
+			air_equipment
+		}
+	}
+
+	advanced_anti_grav_fighter = {
+		research_cost = 2.0
+		start_year = 1944
+
+		allow = {
+			# Determine if has artefact
+		}
+
+		on_research_complete = { 
+			# Probably do stuff with artefacts in here
+		}
+
+		enable_equipments = {
+			flying_saurcer_fighter_equipment_1
+		}
+
+		folder = {
+			name = snek_folder
+
+			position = {
+				x = @grav_fighter
+				y = @1944
+			}
+		}
+
+		categories = {
+			cat_heavy_fighter
+			snek_tech
+			air_equipment
+		}
+	}
+}

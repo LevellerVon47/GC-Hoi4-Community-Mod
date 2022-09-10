@@ -1,0 +1,50 @@
+state={
+	id=841
+	name="STATE_841"
+	history={
+		owner = SOV
+		victory_points = {
+			3686 20 
+		}
+		victory_points = {
+			9680 1 
+		}
+		victory_points = {
+			6704 1 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			air_base = 3
+			3686 = {
+				naval_base = 10
+				coastal_bunker = 3
+
+			}
+			9680 = {
+				naval_base = 1
+				coastal_bunker = 1
+
+			}
+
+		}
+		add_core_of = SOV
+		add_core_of = LIT
+		add_core_of = CRI
+		1939.1.1 = {
+			buildings = {
+				dockyard = 2
+
+			}
+
+		}
+
+	}
+	provinces={
+		3686 6704 9677 9680 
+	}
+	manpower=200000
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=2.000
+}

@@ -1,0 +1,25 @@
+
+state={
+	id=460
+	name="STATE_460" # Constantine
+	manpower = 781279
+	
+	state_category = rural
+
+	history={
+		owner = ALG
+		add_core_of = ALG
+		victory_points = {
+			4046 1 
+		}
+		buildings = {
+			infrastructure = 2
+		}
+	}
+
+	provinces={
+		4046 7065 7166 10078 13077 
+	}
+
+	local_supplies=0.0 
+}

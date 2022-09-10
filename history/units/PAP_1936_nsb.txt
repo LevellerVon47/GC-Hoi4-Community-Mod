@@ -1,0 +1,352 @@
+﻿####### Division Templates #######
+division_template = { 
+	name = "Divisione di Fanteria" 
+	division_names_group = ITA_INF_01 
+
+	# Represents nearly all infantry divisions
+	# In later years, CC.SK. Brigade added to INF Division (1x2 MIL/INF regiments)
+	# Also represent semi-mountain divisions (1st, 2nd, 3rd, 4th, 6th Divisions)
+	regiments = { 
+		infantry = { x = 0 y = 0 } 
+		infantry = { x = 0 y = 1 } 
+		infantry = { x = 0 y = 2 } 
+		infantry = { x = 1 y = 0 } 
+		infantry = { x = 1 y = 1 } 
+		infantry = { x = 1 y = 2 } 
+	} 
+	support = { 
+		engineer = { x = 0 y = 0 } 
+	} 
+} 
+
+division_template = { 
+	name = "Divisione Alpina" 
+	division_names_group = ITA_MNT_01 
+
+	regiments = { 
+		mountaineers = { x = 0 y = 0 } 												# (elite) Alpini Regiment
+		mountaineers = { x = 0 y = 1 } 
+		mountaineers = { x = 0 y = 2 } 
+		mountaineers = { x = 1 y = 0 } 
+		mountaineers = { x = 1 y = 1 } 
+		mountaineers = { x = 1 y = 2 } 
+	} 
+	support = { 
+		engineer = { x = 0 y = 0 } 
+		artillery = { x = 0 y = 1 } 
+	} 
+
+	priority = 2 
+} 
+
+division_template = { 
+	name = "Divisione Coloniale" 
+	division_names_group = ITA_COL_01 
+
+	# Represents lesser-equipped colonial units
+	regiments = { 
+		infantry = { x = 0 y = 0 } 
+		infantry = { x = 0 y = 1 } 
+		infantry = { x = 0 y = 2 } 
+		infantry = { x = 1 y = 0 } 
+		infantry = { x = 1 y = 1 } 
+		infantry = { x = 1 y = 2 } 
+	} 
+
+	priority = 0 
+} 
+
+division_template = { 
+	name = "Divisione Celere" 
+	division_names_group = ITA_CAV_02 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 } 
+		cavalry = { x = 0 y = 1 } 
+		cavalry = { x = 1 y = 0 } 
+		cavalry = { x = 1 y = 1 } 
+		motorized = { x = 2 y = 0 }													# (elite) Bersaglieri Regiment
+		motorized = { x = 2 y = 1 } 
+		light_armor = { x = 3 y = 0 }												# L3/35 Tankette Battalion
+	} 
+
+	priority = 2 
+} 
+
+division_template = { 
+	name = "Reggimento di Cavalleria" 
+	division_names_group = ITA_CAV_01 
+
+	regiments = { 
+		cavalry = { x = 0 y = 0 } 
+		cavalry = { x = 0 y = 1 } 
+		cavalry = { x = 1 y = 0 } 
+		cavalry = { x = 1 y = 1 } 
+	} 
+} 
+
+
+####### OOB #######
+units = { 
+
+	### Gruppo d'Armata Sud ###
+	# VII Corpo d'Armata #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 20
+		} #  "20a Divisione di Fanteria 'Friuli'" 
+		location = 4159 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 25
+		} #  "25a Divisione di Fanteria 'Bologna'" 
+		location = 10074 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+		start_equipment_factor = 0.7 
+	} 
+
+	##### Commando Superiore Africa #####
+	# Subordinate to Theater #
+	division = { # 
+		name = "7a Divisione CC.SK. 'Cirene'" 
+		location = 819 
+		division_template = "Divisione di Fanteria"	# CC.SK. militia, lower training and equipment 
+		start_experience_factor = 0.1 
+		start_equipment_factor = 0.5 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 2
+		} #  "2a Divisione Coloniale 'Libia'" 
+		location = 819 
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PAP" } } 
+		start_equipment_factor = 0.5 
+	}
+
+	### Armata dell'Africa Orientale Italiana ###
+	# I Corpo d'Armata dell'A.O.I. #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 26
+		} #  "26a Divisione di Fanteria 'Assietta'" 
+		location = 819 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.3 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 30
+		} #  "30a Divisione di Fanteria 'Sabauda'" 
+		location = 819 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 5
+		} #  "5a Divisione Alpina 'Pusteria'" 
+		location = 819 
+		division_template = "Divisione Alpina" 
+		start_experience_factor = 0.3 
+	} 
+	division = { # 
+		name = "4a Divisione CC.SK. '3 Gennaio'" 
+		location = 819 
+		division_template = "Divisione di Fanteria"	# CC.SK. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	}
+	division = { # 
+		name = "5a Divisione CC.SK. '1 Febbraio'" 
+		location = 8043 
+		division_template = "Divisione di Fanteria"	# CC.SK. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+
+	# Corpo d'Armata Eritreo #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 31
+		} #  "1a Divisione Coloniale 'Eritrea'" 
+		location = 10074 
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PAP" } } 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 32
+		} #  "2a Divisione Coloniale 'Eritrea'" 
+		location = 10074
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PAP" } } 
+	} 
+
+	# Corpo d'Armata Libico #
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 29
+		} #  "29a Divisione di Fanteria 'Piemonte'" 
+		location = 10074 
+		division_template = "Divisione di Fanteria"	
+		start_experience_factor = 0.2 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 1
+		} #  "1a Divisione Coloniale 'Libia'" 
+		location = 10074 
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PAP" } } 
+	} 
+	division = { # 
+		division_name = {
+			is_name_ordered = yes
+			name_order = 101
+		} #  "101a Divisione Coloniale 'Somalia'" 
+		location = 10074 
+		division_template = "Divisione Coloniale" # Colonial militia, lower training and equipment
+		force_equipment_variants = { infantry_equipment_0 = { owner = "PAP" } } 
+	} 
+	division = { # 
+		name = "6a Divisione CC.SK. 'Tevere'" 
+		location = 10074 
+		division_template = "Divisione di Fanteria"	# CC.SK. militia, lower training and equipment
+		start_experience_factor = 0.2 
+	} 
+}
+
+
+
+##### AIR WINGS #####
+air_wings = { 
+	### PAPLY ###
+
+	# 3a Squadra Aerea - SQA3 (Rome)
+	2 = { 
+		# 5a Divisione Aerea 'Eolo'
+		tac_bomber_equipment_0 = { 
+			amount = 64 
+			owner = "PAP" 
+		} 
+		# 8a Brigata Aerea 'Astore'
+		fighter_equipment_0 = { 
+			amount = 80 
+			owner = "PAP" 
+		} 
+	} 
+
+	# 2a Squadra Aerea - SQA2 (Palermo)
+	115 = { 
+		# 1a Divisione Aerea 'Aquila'
+		fighter_equipment_0 = { 
+			amount = 80 
+			owner = "PAP" 
+		} 
+		# 3a Divisione Aerea 'Centauro'
+		tac_bomber_equipment_0 = { 
+			amount = 32 
+			owner = "PAP" 
+		} 
+	} 
+
+	# 4a Squadra Aerea - SQA4 (Bari)
+	156 = { 
+		# 9a Divisione Aerea 'Leone'
+		nav_bomber_equipment_1 = { 
+			amount = 48 
+			owner = "PAP" 
+		}
+		fighter_equipment_0 = { 
+			amount = 40 
+			owner = "PAP" 
+		} 
+		tac_bomber_equipment_0 = { 
+			amount = 32 
+			owner = "PAP" 
+		} 
+		CAS_equipment_1 = { 
+			amount = 48 
+			owner = "PAP" 
+		} 
+	} 
+} 
+
+
+####### Starting Production Queue #######
+instant_effect = { 
+	if = { 
+		limit = { is_tutorial = no } 
+
+		##### Equipments #####
+		add_equipment_production = { 
+			equipment = { 
+				type = infantry_equipment_1 
+				creator = "PAP" 
+			} 
+
+			requested_factories = 4 
+			progress = 0.1 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = support_equipment_1 
+				creator = "PAP" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.3 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = light_tank_chassis_1 
+				creator = "PAP" 
+				version_name = "L3/35"
+			} 
+
+			requested_factories = 1 
+			progress = 0.4 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = motorized_equipment_1 
+				creator = "PAP" 
+			} 
+
+			requested_factories = 2 
+			progress = 0.4 
+			efficiency = 50 
+		} 
+
+		add_equipment_production = { 
+			equipment = { 
+				type = CAS_equipment_1 
+				creator = "PAP" 
+			} 
+
+			requested_factories = 1 
+			progress = 0.2 
+			efficiency = 50 
+		} 
+	}
+} 

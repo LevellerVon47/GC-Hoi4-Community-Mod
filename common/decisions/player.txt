@@ -1,0 +1,150 @@
+UTI_aid_decisions = {
+	guns_from_byzantium = {
+		icon = generic_industry
+
+		available = {
+			has_equipment = {
+				convoy > 15
+			}
+		}
+
+		cost = 50
+
+		priority = 5
+
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -15
+			}
+		}
+
+		remove_effect = {
+			SOV = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 1000
+					target = UTI
+				}
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 15
+				}
+			}
+		}
+	}
+
+	artillery_from_byzantium = {
+		icon = generic_industry
+
+		available = {
+			SOV = {
+				has_equipment = {
+					artillery_equipment > 34
+				}
+			}
+			has_equipment = {
+				convoy > 15
+			}
+		}
+
+		cost = 50
+
+		priority = 5
+
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -5
+			}
+		}
+
+		remove_effect = {
+			SOV = {
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = 35
+					target = UTI
+				}
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 5
+				}
+			}
+		}
+	}
+}
+
+SPN_aid_decisions = {
+	guns_from_france = {
+		icon = generic_industry
+
+		available = {
+			has_equipment = {
+				convoy > 15
+			}
+		}
+
+		cost = 50
+
+		priority = 5
+
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -15
+			}
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = { type = infantry_equipment_0 amount = 500 producer = FRA }
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 500 producer = FRA }
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 15
+			}
+		}
+	}
+
+	artillery_from_france = {
+		icon = generic_industry
+
+		available = {
+			FRA = {
+				has_equipment = {
+					artillery_equipment > 34
+				}
+			}
+			has_equipment = {
+				convoy > 15
+			}
+		}
+
+		cost = 50
+
+		priority = 5
+
+		days_remove = 30
+
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = -5
+			}
+		}
+
+		remove_effect = {
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 40 producer = FRA }
+			add_equipment_to_stockpile = {
+				type = convoy
+				amount = 5
+			}
+		}
+	}
+}

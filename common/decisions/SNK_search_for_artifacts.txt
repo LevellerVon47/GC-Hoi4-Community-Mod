@@ -1,0 +1,674 @@
+SNK_search_for_artifacts_cat = {
+	SNK_look_in_cordoba = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 789
+				789 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 789
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			country_event = snaketech.7
+			hidden_effect = {
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 789
+			}
+		}
+	}
+	SNK_look_in_pyramids = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 446
+				446 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 446
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.5
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 446
+			}
+		}
+	}
+	SNK_look_in_tenochtitlan = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 277
+				277 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 277
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.6
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 277
+			}
+		}
+	}
+	SNK_look_in_the_amazon = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 495
+				495 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 495
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				clr_country_flag = SNK_exploring
+				country_event = snaketech.1
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 495
+			}
+		}
+	}
+	SNK_look_in_tunguska = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 576
+				576 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 576
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.2
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 576
+			}
+		}
+	}
+	SNK_look_in_great_zimbabwe = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 545
+				545 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 545
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.9
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 545
+			}
+		}
+	}
+	SNK_look_in_aachen = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 51
+				51 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 51
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.3
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 51
+			}
+		}
+	}
+	SNK_look_in_india = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 438
+				438 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 438
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.4
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 438
+			}
+		}
+	}
+	SNK_look_in_cambodia = {
+		cost = 50
+		fire_only_once = yes
+    	days_remove = 31
+		available = {
+			NOT = {
+				has_country_flag = SNK_exploring
+			}
+			OR = {
+				controls_state = 741
+				741 = {
+					controller = {
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				network_strength = {
+					state = 741
+					value > 50
+				}
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = "We will gain a random number of artifacts."
+			hidden_effect = {
+				country_event = snaketech.8
+				clr_country_flag = SNK_exploring
+				random_list = {
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 4
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 7
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 10
+						}
+					}
+					10 = {
+						add_to_variable = {
+							var = var_snake_artifacts
+							value = 13
+						}
+					}
+				}
+			}
+		}
+		complete_effect = {
+			custom_effect_tooltip = "Our Archaeologist will head off to explore the site."
+			hidden_effect = {
+				set_country_flag = SNK_exploring
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 741
+			}
+		}
+	}
+	SNK_the_secrets_of_advanced_energy = {
+		cost = 50
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has 15 artifacts"		
+				check_variable = { var_snake_artifacts > 14 }
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = var_snake_artifacts
+				value = -15
+			}
+		}
+		remove_effect = {
+			set_technology = { ray_gun_unlock = 1 }
+		}
+	}
+	SNK_the_secrets_of_anti_gravity = {
+		cost = 50
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has 15 artifacts"		
+				check_variable = { var_snake_artifacts > 14 }
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = var_snake_artifacts
+				value = -15
+			}
+		}
+		remove_effect = {
+			set_technology = { anti_grav_unlock = 1 }
+		}
+	}
+	SNK_the_secrets_of_thinking_machines = {
+		cost = 50
+		days_remove = 31
+		fire_only_once = yes
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = "Has 15 artifacts"		
+				check_variable = { var_snake_artifacts > 14 }
+			}
+		}
+		complete_effect = {
+			add_to_variable = {
+				var = var_snake_artifacts
+				value = -15
+			}
+		}
+		remove_effect = {
+			set_technology = { robot_unlock = 1 }
+		}
+	}
+}

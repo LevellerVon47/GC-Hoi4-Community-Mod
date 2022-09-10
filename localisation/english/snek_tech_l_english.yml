@@ -1,0 +1,138 @@
+﻿l_english:
+
+  snek_folder:0 "Alien Technology"
+  snek_folder_desc:0 "Technology which is received from aliens"
+
+  energy_cannon:0 "Experimental Energy Cannon"
+  energy_cannon_desc:0 "Experimenting with energy...."
+
+  improved_ray_cannon:0 "Improved Ray Cannon"
+  improved_ray_cannon_desc:0 "An improved version of ray cannon prototypes."
+
+  advanced_ray_cannon:0 "Advanced Ray Cannon"
+  advanced_ray_cannon_desc:0 "An advanced version of ray cannon prototypes."
+
+  basic_ray_guns:0 "Basic Ray Gun"
+  basic_ray_guns_desc:0 "A basic ray gun for our men."
+
+  advanced_ray_guns:0 "Advanced Ray Gun"
+  advanced_ray_guns_desc:0 "An advanced ray gun for our men."
+
+  robotic_experiments:0 "Robotic Experiments"
+  robotic_experiments_desc:0 "Experimenting with robots...."
+
+  artificial_intelligence:0 "Artificial Intelligence"
+  artificial_intelligence_desc:0 "Damn metal chatterboxes!"
+
+  robot_infantry:0 "Robot Infantry"
+  robot_infantry_desc:0 "What could possibly go wrong?"
+
+  early_mech_chasis:0 "Early Mech Chassis"
+  early_mech_chasis_desc:0 "Haha steampunk go brrr....."
+
+  light_mech_chasis:0 "Light Mech Chassis"
+  light_mech_chasis_desc:0 "Light versions"
+
+  advanced_light_mech_chasis:0 "Advanced Light Mech Chassis"
+  advanced_light_mech_chasis_desc:0 "Light versions but better"
+
+  medium_mech_chasis:0 "Medium Mech Chassis"
+  medium_mech_chasis_desc:0 "Medium versions"
+
+  advanced_medium_mech_chasis:0 "Advanced Medium Mech Chassis"
+  advanced_medium_mech_chasis_desc:0 "Medium versions but better"
+
+  heavy_mech_chasis:0 "Heavy Mech Chassis"
+  heavy_mech_chasis_desc:0 "Heavy versions"
+
+  advanced_heavy_mech_chasis:0 "Advanced Heavy Mech Chassis"
+  advanced_heavy_mech_chasis_desc:0 "Heavy versions but better"
+
+  anti_gravity_experiments:0 "Anti Gravity Experiments"
+  anti_gravity_experiments_desc:0 "Experimenting with gravity...."
+
+  anti_grav_bomber:0 "Anti Gravity Bomber"
+  anti_grav_bomber_desc:0 "These bombers are OP!"
+
+  advanced_anti_grav_bomber:0 "Experimental Energy Cannon"
+  advanced_anti_grav_bomber_desc:0 "These bombers are even more OP!"
+
+  anti_grav_fighter:0 "Experimental Energy Cannon"
+  anti_grav_fighter_desc:0 "These fighters are OP!"
+
+  advanced_anti_grav_fighter:0 "Experimental Energy Cannon"
+  advanced_anti_grav_fighter_desc:0 "These fighters are even more OP!"
+
+  experimental_power_armor:0 "Experimental Power Armour"
+  experimental_power_armor_desc:0 "Experimenting with armour...."
+
+  improved_power_armor:0 "Improved Power Armour"
+  improved_power_armor_desc:0 "An improved version"
+
+  advanced_power_armor:0 "Advanced Power Armour"
+  advanced_power_armor_desc:0 "An advanced version"
+
+  bio_studies:0 "Biological Studies"
+  bio_studies_desc:0 "Studying biology...."
+
+  sss:0 "Super Solder Serum"
+  sss_desc:0 "An excellent diet for our Captains..."
+
+  reanimation:0 "Reanimation"
+  reanimation_desc:0 "What?"
+
+  snaketech.1.t:0 "Deep in the Amazon"
+  snaketech.1.d:0 ""I said to you that we shouldn't have broken into the temple!" the Doctor shouted out as they ran down the corridor, guards in hot pursuit and bullets whizzing past their ears.\n\nThe Professor barely looked at the Doctor, focusing instead on outrunning their pursuers, inscriptions of snakes and mirrors flying past in a blur, "We got the artifact, what are you complaining about?"\n\n"Oh, how about the people wanting to flay us alive?!" the Doctor, answered thoroughly unimpressed with the bravado of the Professor.\n\n"Are we sure that this is the right way?" the Doctor wondered out loud as they turned a corner, crossing a pit of snakes, shouts and screams following from the door portal. "We're stuck on a dead end!" they continued as the duo came to a screeching stop before a wall.\n\n"There's always a plan and...ten seconds" the Professor said, coming to a stop.\n\nThe Doctor turned completely red in the face, "Plan? We're about to be turned into bullet sponges a-"\n\nBOOM!\n\n"You are early" the Professor shouted at the hole in the wall.\n\n"Relax, we're here, aren't we? Let's get going. This won't stall them forever," the Adventurer responded by throwing a flare behind them."\n\nThe Professor jumped through the hole and outside the temple. "Fine. You owe me.""
+  snaketech.1.a:0 ""Later, professor. Now let's first get out of here.""
+
+  snaketech.2.t:0 "Where the Sky Meets the Snow"
+  snaketech.2.d:0 ""This is freezing-cold. I almost miss the tropics and their mosquitoes" the Professor complained as another mound of snow almost collapsed upon them.\n\n"The mosquitoes are still here, Professor. They're going to show in a few weeks," the Doctor shot back with barely-hidden glee.\n\nThe Adventurer shrugged "By that time we'll be out of here and back in our cozy offices. The horror,"\n\n"Is it a long way to the temple?" the Doctor inquired,\n\n"Shouldn't be more than a few more leagues until we get to the big rock," The Adventurer absent-mindedly noted while staring down at a compass.\n\nThe Doctor stopped dead in their tracks, "Say again, big rock?"\n\n"Big Rock yes. It's a big rock from space, but that's not important right now,"\n\n"But all the other temples?"\n\n"Are put on hold because of this. It may be the most crucial of all yet!" the Adventurer exclaimed, basking their arms, "Think of the possibility of a new relic, untainted by centuries on Earth,"\n\nThe Professor looked at the sled following behind them, "This feels like it's going to be a thing of a lot of digging and not a lot of thinking,"\n\n"And a lot of booms. Just how I like it," the Adventurer chuckled as they reached a clearing with a big, shiny rock sitting right at the center of it."
+  snaketech.2.a:0 ""Gentlemen, time to go to work.""
+
+  snaketech.3.t:0 "In the Ancient Ruins"
+  snaketech.3.d:0 "Aachen, the ancient capital of Charlemagne and centre of the German Ophite movement. It was here that the Adventurer followed the trail to an ancient crypt buried under a library. Among the old bones and the sweer water he finally found what he was looking for.\n\n"Doctor, I hear voices," his companion said. The Adventurer looked up from the old chest buried at the back of a burial chamber. He could hear the German speaking voices, and they were getting closer. There was no doubt that it was the Ophite agents that had been tailing them for days. They didn't have much time left. He grabbed the chest and hurled it against the floor, shattering the antique box to pieces. Out feel the ancient Ophite artifact he was looking for. He grabbed it just as the flashes of the Ophite Agents’ touches shone down the stone passageway, glinting off the rat-infested water."
+  snaketech.3.a:0 "Quick! To the river!"
+
+  snaketech.4.t:0 "t:The Viper's Nest"
+  snaketech.4.d:0 "BANG! A large section of the floor collapsed, revealing a gaping hole in the ground. The Doctor looked down into the abyss, then to the Adventurer "Why was it a good idea to break into the Viper's Nest?"\n\n"Because we they had something that belongs in a museum" the Adventurer answered, pushing against a wall, then taking out a hammer and hitting a few choice stones. The wall groaned, then it too collapsed, revealing a hidden hallway\n\n"And this is supposed to be the secret passageway to the Rod? It looks like it has never been touched in the past, oh, I don't know, 2000 years!" the Doctor questioned.\n\nThe Adventurer threw a flare down the hallway, lighting the way all teh way down to a pedestal, "And that's why it has been lost for that time. But, it is amazing what modern technology can do. Not that anyone else would have been able to find it anyways without our team."\n\n"It looks empty" the Doctor replied as the duo walked down the corridor, looking up and down for any artifacts.\n\nThe Adventurer rummaged behind the pedestal, "It's been centuries, but I won't exclude the possibility of our little...construction project disturbing it. Maybe it is...""
+  snaketech.4.a:0 ""The Rod of Ascelpius! Here!""
+
+  snaketech.5.t:0 "The Mummy's Gift"
+  snaketech.5.d:0 ""You do know that this Phararoh's Curse is a bunch of nonsense?" the Professor asked.\n\n"Says the one who thinks that Athena blessed you in that gas cave" the Adventurer shot back.\n\n"Look, all I am saying is that someone like Athena appeared to me and gave me her blessing"\n\nThe Adventurer stared directly at the Professor "And I also have a PhD in Applied Explosivity from the University of Starler"\n\n"You do?" the Professor asked surprise\n\n"No. You can't even get a degree like that. Read the inscriptions 'fessor" the Adventurer deadpanned.\n\nTHIS ARTIFACT WAS GIVEN TO US. WE CONSIDERED OURSELVES A POWERFUL CULTURE.\n\n"Ain't that uplifting" The Adventurer noted.\n\nTO THOSE WHO SUCCEED US THIS ARTIFACT HELD INFORMATION BEYOND OUR CAPABILITIES. MAY THESE ARTIFACTS HELP YOU AS THEY HELPED US.\n\n"But nothing that showed where it is." the Adventurer dryly remarked.\n\n"I don't think so" the Professor thought out loud, "There is a certain indent in here, that seems awfully suspicious" the thought continued, fingers gliding across the stone, until they came to a small indent..\n\n"
+  snaketech.5.a:0 ""Hidden in plain sight. How quaint.""
+
+  snaketech.6.t:0 "The Feathered Serpent"
+  snaketech.6.d:0 ""I knew this was a bad idea!" the Adventurer shouted as the trio ran through the streets of Tecnochtitlan. "Waltzing right into the most holy of sanctums and then asking if we can borrow their most prized possessions for some 'studies'"\n\n"I'm sure they are good people very deep down," the Professor stated.\n\n"Do you want to stay behind us and talk to the priests who practice sacrifices as their day job? And worship the giant flying snake in the sky who is the patron god of their air force?" The Adventurer lambasted the Professor\n\n"Maybe? He's also the God of light, life and wisdom"\n\nThe Adventurer looked straight at the Professor as they came to a halt in a crowd at a train station, "It's your liberty on the line if you want to talk to them." they said, as they made their way onto a train, "And mine as well when they discover you don't have the crystal feather."\n\nThe train began moving slowly, the engine coughing up smoke and steam, high-pitched groans as it picked up speed. The Professor looked down on their ex-pursuers  "Think they will pursue us on the train?"\n\n"No. They think we went the other way." the Adventurer noted.\n\n"And we got this with us," the Professor announced to the Adventurer, opening a small wooden box..."
+  snaketech.6.a:0 ""The Crystal Feather!""
+
+  snaketech.7.t:0 "A Nice and Quiet Trip"
+  snaketech.7.d:0 "The sounds of monks and faithful in the Cathedral of Cordoba echoed between the pillars as the trio walked through the wide-open nave, carvings geometric and plant-like weaving around the pillars and walls. "A break from the usual live-threatening adventures with headhunters and skullshrinkers alike, huh?" the Doctor remarked to the othe two, looking at the double-layered pillars.\n\nThe Professor nodded "Indeed, and hopefully, one that goes a lot smoother than that time in China."\n\n"I could've used some excitement y'know. This feeling of stuffy cathedrals and boring monks don't feel like me," the Adventurer remarked. "Just find the inscriptions, so we know what to ask them."\n\n"Patience, patience," the Professor remarked. "We don't want everyone to go nuts over our behaviour," they continued, bowing down to read an inscription.\n\nTHE SNAKE HOLDS THE SECRETS TO MUCH MORE THAN WE KNOW - THE ORDER OF THE FEATHER WILL GRANT WHOMEVER CAN RECITE THIS THE SERPENT OF KNOWLEDGE\n\nThe Professor stood up, and walked straight over to the monks. "I could regale you all with a long inscription, but we neeed the Serpent of Knowledge, and you are, given the feahter on your clothes part of the Order. So could we get it?"\n\nA pregnant pause followed as the monks processed the statement, before they gave an answer."
+  snaketech.7.a:0 ""Certainly.""
+
+  snaketech.8.t:0 "The Temples of Cambodia"
+  snaketech.8.d:0 "The tip of the Angkor Wat gleamed in the sun as the trio made their way through the jungle, the machetes chopping a small path through the dense vegetation. In the distance,  they could see the tip, but not much more beyond them.\n\n"Are we supposed to have cut our way through this mess. Surely, there must be an easier way," the Doctor complained.\n\nThe Professor turned to the Doctor, "It was either this or shoot our way through the jungle, past guards and whatnot. I prefer to avoid killing,"\n\n"The Professor's right. Killing people is barbaric and there's finesse involved here. Avoid angry locals, and all around make sure to not get shot at. Arrows or bullets," the Adventurer added.\n\nThe conversation died away for a while as they focused on clearing their way through the jungle, until they finally stood at the edge of the compound. Both Angkor itself, but also the rest of the temples around it standing in silent majesty and at the tip of the top of the temple, a crystal with unmistaken gleam.\n\n"Now, we have a challenge. Selecting who is going to make the climb to the top, get the crystal, get down here, and also managing to ford the pools. Without being spotted," the Professor announced. "and I think you've been practice, haven't you, Doctor?""
+  snaketech.8.a:0 ""Uhhh...yes, why are you asking?""
+
+  snaketech.9.t:0 "Digging in the Ground"
+  snaketech.9.d:0 ""Great Zimbabwe..." the Adventurer began speaking.\n\n"A reminder of what once was," the Professor continued "and now we have to figure out where the damn artifact is."\n\n"It's not so bad. There's only this and the rest of these cryptic clues to figure out where it is. At least it's not like that time in America," the Professor stated\n\n"I told you that there was a final clue that could have done a great deal of help," The Adventurer defended themselves.\n\nThe Professor narrowed their eyes, "The last time you said that, we spent half a year running around confused in dusty archives. And I thought that you were against that?"\n\n"Maybe?"\n\n"I had a great idea actually. Next time, I go and talk to people, and you dig yourself deep into the archives. And we'll see who does better on the other's turf." the Profesor deadpanned.\n\nThe Adventurer stuck a spade in the ground and began digging "Shush, like you'd be any good at schmoozing information out of people. Now dig,"\n\n"Fine. But don't blame me if we have to dig up this entire place and hire people from every single town and village to help us.""
+  snaketech.9.a:0 ""Hopefully not!""
+
+  raygun_equipment_1:0 "Basic Ray Guns"
+  raygun_equipment_2:0 "Improved Ray Guns"
+  energy_artillery_equipment_0:0 "Basic Ray-Artillery"
+  energy_artillery_equipment_1:0 "Improved Ray-Artillery"
+  energy_artillery_equipment_2:0 "Advanced Ray-Artillery"
+  basic_ray_guns:0 "Basic Ray Guns"
+  advanced_ray_guns:0 "Improved Ray Guns"
+  energy_cannon:0 "Basic Ray-Artillery"
+  improved_ray_cannon:0 "Improved Ray-Artillery"
+  advanced_ray_cannon:0 "Advanced Ray-Artillery"
+  flying_saurcer_bomber_equipment:0 "Flying Saucer Bomber"
+  flying_saurcer_fighter_equipment:0 "Flying Saucer Fighter"
+  flying_saurcer_bomber_equipment_0:0 "Experimental Flying Saucer"
+  flying_saurcer_bomber_equipment_1:0 "Basic Flying Saucer Bomber"
+  flying_saurcer_bomber_equipment_2:0 "Improved Flying Saucer Bomber"
+  flying_saurcer_fighter_equipment_1:0 "Basic Flying Saucer Fighter"
+  flying_saurcer_fighter_equipment_2:0 "Improved Flying Saucer Fighter"
+  energy_artillery:0 "Ray-Artillery"
+  energy_infantry:0 "Ray Gun Infantry"

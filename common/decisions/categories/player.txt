@@ -1,0 +1,36 @@
+UTI_aid_decisions = {
+	allowed = {
+		OR = {
+			tag = SPN
+			tag = UTI
+		}
+	}
+
+	visible = {
+		has_completed_focus = SPN_mediterranean_routes
+		has_civil_war = yes
+	}
+
+	priority = 10
+
+	picture = generic_industry
+	visible_when_empty = no
+}
+
+SPN_aid_decisions = {
+	allowed = {
+		OR = {
+			tag = SPN
+		}
+	}
+
+	visible = {
+		has_completed_focus = SPN_biscay_trail
+		has_civil_war = yes
+	}
+
+	priority = 10
+
+	picture = generic_industry
+	visible_when_empty = no
+}

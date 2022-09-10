@@ -1,0 +1,24 @@
+state={
+	id=838
+	name="STATE_838"
+
+	history={
+		owner = TUN
+		victory_points = {
+			8077 1
+		}
+		buildings = {
+			infrastructure = 1
+		}
+		add_core_of = TUN
+	}
+
+	provinces={
+		8077 4903 8061
+	}
+	manpower=50000
+	buildings_max_level_factor=1.000
+	state_category=wasteland
+
+	local_supplies=0.0 
+}

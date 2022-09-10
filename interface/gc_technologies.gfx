@@ -1,0 +1,54 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_anti_gravity_experiments_medium"
+		texturefile = "gfx/interface/technologies/early_saucer.dds"
+	}
+	SpriteType = {
+		name = "GFX_anti_grav_fighter_medium"
+		texturefile = "gfx/interface/technologies/saucer1.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_anti_grav_fighter_medium"
+		texturefile = "gfx/interface/technologies/saucer1.dds"
+	}
+	SpriteType = {
+		name = "GFX_anti_grav_bomber_medium"
+		texturefile = "gfx/interface/technologies/saucer2.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_anti_grav_bomber_medium"
+		texturefile = "gfx/interface/technologies/saucer2.dds"
+	}
+	SpriteType = {
+		name = "GFX_power_armor1"
+		texturefile = "gfx/interface/technologies/power_armor1.dds"
+	}
+	SpriteType = {
+		name = "GFX_power_armor2"
+		texturefile = "gfx/interface/technologies/power_armor2.dds"
+	}
+	SpriteType = {
+		name = "GFX_power_armor3"
+		texturefile = "gfx/interface/technologies/power_armor3.dds"
+	}
+	SpriteType = {
+		name = "GFX_basic_ray_guns_medium"
+		texturefile = "gfx/interface/technologies/raygun1.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_ray_guns_medium"
+		texturefile = "gfx/interface/technologies/raygun2.dds"
+	}
+	SpriteType = {
+		name = "GFX_energy_cannon_medium"
+		texturefile = "gfx/interface/technologies/ray-art1.tga"
+	}
+	SpriteType = {
+		name = "GFX_improved_ray_cannon_medium"
+		texturefile = "gfx/interface/technologies/ray-art2.tga"
+	}
+	SpriteType = {
+		name = "GFX_advanced_ray_cannon_medium"
+		texturefile = "gfx/interface/technologies/ray-art2.tga"
+	}
+}

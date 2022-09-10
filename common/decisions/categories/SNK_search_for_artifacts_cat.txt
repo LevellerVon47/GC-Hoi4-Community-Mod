@@ -1,0 +1,15 @@
+SNK_search_for_artifacts_cat = {
+	priority = 100
+	allowed = {
+		OR = {
+			original_tag = SPN
+			original_tag = UTI
+			original_tag = SKS
+		}
+		is_ai = no
+	}
+	visible = {
+		always = yes
+	}
+	visible_when_empty = yes
+}

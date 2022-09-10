@@ -1,0 +1,18 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_serpiente"
+		texturefile = "gfx/leaders/SPN/Dr._Serpiente.dds"
+	}
+	SpriteType = {
+		name = "GFX_penelope_byzantius"
+		texturefile = "gfx/leaders/SPN/Penelope_IV_Byzantus.dds"
+	}
+	SpriteType = {
+		name = "GFX_senate_war_council"
+		texturefile = "gfx/leaders/SPN/Senate_War_Council.dds"
+	}
+	SpriteType = {
+		name = "GFX_union_collective_assembly"
+		texturefile = "gfx/leaders/SPN/Union_Collective_Assembly.dds"
+	}
+}

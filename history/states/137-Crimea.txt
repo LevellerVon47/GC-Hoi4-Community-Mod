@@ -1,0 +1,41 @@
+
+state={
+	id=137
+	name="STATE_137"
+
+	history={
+		owner = LIT
+		victory_points = {
+			705 10 
+		}
+		victory_points = {
+			3722 1 
+		}
+		victory_points = {
+			6724 1 
+		}
+		buildings = {
+			infrastructure = 3
+			dockyard = 1
+			air_base = 3
+		}
+		add_core_of = LIT
+		add_core_of = CRI
+		1939.1.1 = {
+			buildings = {
+				dockyard = 2
+
+			}
+
+		}
+
+	}
+
+	provinces={
+		705 3722 6724 9718 11649 
+	}
+	manpower=861607
+	buildings_max_level_factor=1.000
+	state_category=city
+	local_supplies=8.000
+}

@@ -1,0 +1,22 @@
+spriteTypes = {
+	SpriteType = {
+		name = "GFX_basic_ray_guns_medium"
+		texturefile = "gfx/interface/technologies/raygun1.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_ray_guns_medium"
+		texturefile = "gfx/interface/technologies/raygun2.dds"
+	}
+	SpriteType = {
+		name = "GFX_energy_cannon_0_medium"
+		texturefile = "gfx/interface/technologies/ray-art1.dds"
+	}
+	SpriteType = {
+		name = "GFX_improved_ray_cannon_medium"
+		texturefile = "gfx/interface/technologies/ray-art2.dds"
+	}
+	SpriteType = {
+		name = "GFX_advanced_ray_cannon_medium"
+		texturefile = "gfx/interface/technologies/ray-art2.dds"
+	}
+}

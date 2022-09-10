@@ -1,0 +1,143 @@
+﻿division_template = {
+	name = "Strelkovaya Diviziya"			# Infantry Division
+	division_names_group = SOV_INF_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		infantry = { x = 0 y = 0 }
+		infantry = { x = 0 y = 1 }
+		infantry = { x = 0 y = 2 }
+		infantry = { x = 1 y = 0 }
+		infantry = { x = 1 y = 1 }
+		infantry = { x = 1 y = 2 }
+		infantry = { x = 2 y = 0 }
+		infantry = { x = 2 y = 1 }
+		infantry = { x = 2 y = 2 }
+	}
+}
+
+division_template = {
+	name = "Tankovaya Diviziya"			# Artillery Division
+	division_names_group = SOV_ARM_01
+	# Note: Divisions were nowhere near full strength until mobilized
+	regiments = {
+		light_armor = { x = 0 y = 0 }
+		light_armor = { x = 0 y = 1 }
+        light_armor = { x = 1 y = 0 }
+		light_armor = { x = 1 y = 1 }
+		motorized = { x = 2 y = 0 }
+        motorized = { x = 2 y = 1 }
+	}
+	support = {
+        mot_recon = { x = 0 y = 0 }
+	}
+}
+
+units = {
+	######## LAND OOB ########
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 1
+		}
+		location = 11248
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 2
+		}
+		location = 11248
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 3
+		}
+		location = 11248
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 4
+		}
+		location = 11476
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 5
+		}
+		location = 11476
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 6
+		}
+		location = 11476
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 7
+		}
+		location = 11476
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+	
+	division = { 
+		division_name = {
+				is_name_ordered = yes
+				name_order = 8
+		}
+		location = 11476
+		division_template = "Strelkovaya Diviziya"
+		
+		start_experience_factor = 0.1
+	}
+
+	##### No Naval OOB #####
+}
+
+air_wings = {
+	219 = {
+		fighter_equipment_0 =  {
+			owner = "RYA" 
+			amount = 48
+		}
+	}
+}
+
+### Starting Production ###
+instant_effect = {
+	add_equipment_production = {
+		equipment = {
+			type = infantry_equipment_1
+			creator = "RYA"
+		}
+		requested_factories = 1
+		progress = 0.28
+		efficiency = 100
+	}
+}

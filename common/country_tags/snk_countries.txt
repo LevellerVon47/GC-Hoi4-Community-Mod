@@ -1,0 +1,8 @@
+RYA	= "countries/Ryazan.txt"
+NOV	= "countries/Novogrod.txt"
+SPN = "countries/Player.txt"
+SKS = "countries/Snek_Spain.txt"
+UTI = "countries/UTI.txt" #Should be called "Iberian Workers Union" or something similar
+PRM	= "countries/Perm.txt"
+PAP	= "countries/PapalStates.txt"
+#TODO Localisation

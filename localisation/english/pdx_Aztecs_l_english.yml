@@ -1,0 +1,20 @@
+﻿l_english:
+ ### Country Names ###
+ MEX_Aztecs_fascism: "Aztec Empire"
+ MEX_Aztecs_fascism_DEF: "the Aztec Empire"
+ MEX_Aztecs_fascism_ADJ: "Aztec"
+ 
+ MEX_Aztecs_democratic: "Aztec Republic"
+ MEX_Aztecs_democratic_DEF: "the Aztec Republic"
+ MEX_Aztecs_democratic_ADJ: "Aztec"
+ 
+ MEX_Aztecs_communism: "People's Republic of the Aztecs"
+ MEX_Aztecs_communism_DEF: "the People's Republic of the Aztecs"
+ MEX_Aztecs_communism_ADJ: "Aztec"
+ 
+ MEX_Aztecs_neutrality: "Kingdom of the Aztecs"
+ MEX_Aztecs_neutrality_DEF: "the Kingdom of the Aztecs"
+ MEX_Aztecs_neutrality_ADJ: "Aztec"
+ 
+ MEX_join_axis:0 "Join the Axis"
+ MEX_prepare_us_invasion:0 "Prepare American Invasion"

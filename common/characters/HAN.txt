@@ -1,0 +1,16 @@
+characters={
+	HAN_alfons_hatler={
+		name="Alfons Muller"
+		portraits={
+			civilian={
+				large=GFX_Portrait_Germany_Generic_land_1
+			}
+		}
+		country_leader={
+			ideology=nazism
+			traits={ dictator }
+			expire="1965.1.1.1"
+			id=-1
+		}
+	}
+}

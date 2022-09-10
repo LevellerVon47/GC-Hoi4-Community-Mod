@@ -1,0 +1,65 @@
+# Override of vanilla
+foreign_politics = {
+	MEX_join_axis = {
+
+		icon = generic_civil_support
+
+		fire_only_once = yes
+
+		allowed = {
+			tag = MEX
+		}
+		available = {
+			GER = {
+				has_government = fascism
+				is_faction_leader = yes
+			}
+			has_government = fascism
+			NOT = {
+				has_war_with = GER
+			}
+			is_in_faction = no
+			is_subject = no
+			date > 1941.1.1
+		}		
+		complete_effect = {
+			GER = {
+				country_event = {
+					id = generic.2
+				}				
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+	MEX_prepare_us_invasion = {
+
+		icon = generic_civil_support
+
+		fire_only_once = yes
+		
+		days_remove = 20
+
+		allowed = {
+			tag = MEX
+		}
+		available = {
+			has_government = fascism
+			can_declare_war_on = USA
+			USA = {
+				is_subject = no
+			}
+			date > 1941.1.1
+		}		
+		remove_effect = {
+			create_wargoal = { 
+				type = annex_everything
+				target = USA
+			}
+		}
+		ai_will_do = {
+			factor = 10
+		}		
+	}
+}

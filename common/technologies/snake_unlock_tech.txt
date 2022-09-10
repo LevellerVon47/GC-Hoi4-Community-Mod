@@ -1,0 +1,25 @@
+technologies = {
+
+	#for focus
+	anti_grav_unlock = {
+
+		research_cost = 1
+		allow = {
+			always = no
+		}
+	}
+	ray_gun_unlock = {
+
+		research_cost = 1
+		allow = {
+			always = no
+		}
+	}
+	robot_unlock = {
+
+		research_cost = 1
+		allow = {
+			always = no
+		}
+	}
+}

@@ -1,0 +1,15 @@
+
+ technology_sharing_group = {
+
+	id = snaketech_research
+	name = snaketech_research_name
+	desc = snaketech_research_desc
+	picture = GFX_technology_sharing_default
+    
+	research_sharing_per_country_bonus = 0.1
+
+    available = {
+        is_in_faction_with = SKS
+    }
+
+}

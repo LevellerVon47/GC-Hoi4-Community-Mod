@@ -1,0 +1,29 @@
+#	Example:
+# 
+#	example_trigger = {
+#		tag = GER
+#		is_ai = no
+#	}
+#
+#
+#	In a script file:
+#
+#	trigger = {
+#		exampel_trigger = yes
+#	}
+# 
+#	THIS FILE IS FOR TRIGGERS SPECIFICALLY FOR THE SPR/SPA/SPB/SPC/SPD TAGS
+
+SPR_scw_in_progress = {
+	OR = {
+		SPN = {
+			has_civil_war = yes
+		}
+		SKS = {
+			has_civil_war = yes
+		}
+		UTI = {
+			has_civil_war = yes
+		}
+	}
+}

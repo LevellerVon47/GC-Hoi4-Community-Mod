@@ -1,0 +1,110 @@
+add_namespace = snaketech
+
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.1
+	title = snaketech.1.t
+	desc = snaketech.1.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.1.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.2
+	title = snaketech.2.t
+	desc = snaketech.2.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.2.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.3
+	title = snaketech.3.t
+	desc = snaketech.3.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.3.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.4
+	title = snaketech.4.t
+	desc = snaketech.4.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.4.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.5
+	title = snaketech.5.t
+	desc = snaketech.5.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.5.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.6
+	title = snaketech.6.t
+	desc = snaketech.6.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.6.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.7
+	title = snaketech.7.t
+	desc = snaketech.7.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.7.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.8
+	title = snaketech.8.t
+	desc = snaketech.8.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.8.a
+	}
+}
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = snaketech.9
+	title = snaketech.9.t
+	desc = snaketech.9.d
+
+	is_triggered_only = yes
+
+	option = {
+		name = snaketech.9.a
+	}
+}

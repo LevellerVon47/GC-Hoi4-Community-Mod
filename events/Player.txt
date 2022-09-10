@@ -1,0 +1,1358 @@
+add_namespace = SPN
+
+country_event = { #Begin the civil war
+	#TODO Localisation
+	id = SPN.1
+	title = SPN.1.T
+	desc = SPN.1.D
+	picture = GFX_report_event_spain_civil_war_soldiers
+
+	is_triggered_only = yes
+
+	immediate = { ### Break spain and make civil war
+		hidden_effect = {
+			set_global_flag = SPN_civil_war
+			mark_focus_tree_layout_dirty = yes
+
+			#Transfer relevant leaders TODO
+
+
+			#Remove all units
+			# delete_units = {
+			# 	division_template = "División de Infantería"
+			# 	disband = yes
+			# }
+			# delete_units = {
+			# 	division_template = "División de Caballería"
+			# 	disband = yes
+			# }
+			# delete_units = {
+			# 	division_template = "Brigada Montaña"
+			# 	disband = yes
+			# }
+			# delete_units = {
+			# 	division_template = "Brigada de Infantería"
+			# 	disband = yes
+			# }
+
+			#Give everybody cores
+			every_owned_state = {
+				limit = {
+					is_core_of = SPN
+				}
+				add_core_of = SKS
+				add_core_of = UTI
+			}
+
+			##Make UTI
+			#Give them their states
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 165
+						state = 167
+						state = 794
+						state = 166
+						state = 739
+						state = 176
+						state = 172
+						state = 792
+						state = 793
+					}
+				}
+
+				transfer_state_to = UTI
+			}
+
+			#Transfer some generals 
+
+			UTI = {
+				#Spawn divisions in states
+				division_template = {
+					name = "Guarnición Colectivista"
+					is_locked = yes
+					template_counter = 6
+					division_names_group = SPR_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Guardia del Trabajador\" division_template = \"Guarnición Colectivista\" start_experience_factor = 0.1"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Guardia del Trabajador\" division_template = \"Guarnición Colectivista\" start_experience_factor = 0.1"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Guardia del Trabajador\" division_template = \"Guarnición Colectivista\" start_experience_factor = 0.1"
+						owner = PREV
+					}
+				}
+
+				division_template = {
+					name = "Tropas de Choque"
+					is_locked = yes
+					template_counter = 6
+					division_names_group = SPR_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0  y = 0 }
+					}
+				}
+
+				792 = {
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+				}
+
+				set_popularities = {
+					communism = 85
+					neutrality = 5
+					democratic = 10
+				}
+
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+					long_name = SPN_communists_long
+					name = SPN_communists
+				}
+
+				#Mark focuses done
+				unlock_national_focus = SPN_UTI
+				unlock_national_focus = SPN_relocate_weapons_depots
+
+				#Give national spirits
+				add_ideas = SPN_disorganized_army
+			}
+
+
+			##Make SKS
+			#Give them their states
+			every_owned_state = {
+				limit = {
+					OR = {
+						state = 168
+						state = 173
+						state = 789
+						state = 169
+						state = 118
+						state = 836
+						state = 170
+						state = 179
+						state = 795
+
+						and = {
+							SPN = {
+								has_country_flag = SPN_secured_ciudad_real
+							}
+							state = 175
+						}
+					}
+				}
+
+				transfer_state_to = SKS
+			}
+
+			every_character = {
+				limit = {
+					has_trait = trait_SPA_nationalist_sympathies
+				}
+				set_nationality = SKS
+				remove_trait = {
+					trait = trait_SPA_nationalist_sympathies
+				}
+			}
+
+			SKS = {
+				#Spawn divisions in states
+				division_template = {
+					name = "Guarnición Ophitista"
+					is_locked = yes
+					template_counter = 6
+					division_names_group = SPR_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+					}
+				}
+
+				every_owned_state = {
+					create_unit = {
+						division = "name = \"Guardia del Snek\" division_template = \"Guarnición Ophitista\" start_experience_factor = 0.1"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Guardia del Snek\" division_template = \"Guarnición Ophitista\" start_experience_factor = 0.1"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"Guardia del Snek\" division_template = \"Guarnición Ophitista\" start_experience_factor = 0.1"
+						owner = PREV
+					}
+				}
+
+				division_template = {
+					name = "Tropas de Choque"
+					is_locked = yes
+					template_counter = 6
+					division_names_group = SPR_INF_02
+					regiments = {
+						infantry = { x = 0 y = 0 }
+						infantry = { x = 0 y = 1 }
+						infantry = { x = 0 y = 2 }
+						infantry = { x = 1 y = 0 }
+						infantry = { x = 1 y = 1 }
+						infantry = { x = 1 y = 2 }
+					}
+					support = {
+						artillery = { x = 0  y = 0 }
+					}
+				}
+
+				169 = {
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+					create_unit = {
+						division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+						owner = PREV
+					}
+				}
+
+				set_popularities = {
+					fascism = 80
+					neutrality = 15
+					democratic = 5
+				}
+
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+					long_name = SPN_fascists_long
+					name = SPN_fascists
+				}
+
+				#Mark focuses done
+				unlock_national_focus = SPN_cult_of_ophitism
+				unlock_national_focus = SPN_secure_ciudad_real
+
+				add_ideas = SPN_low_public_support
+			}
+
+			#SPN EFfects
+			#Spawn divisions in states
+			division_template = {
+				name = "Guarnición Parlamentaria"
+				is_locked = yes
+				template_counter = 6
+				division_names_group = SPR_INF_02
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+				}
+			}
+
+			every_owned_state = {
+				limit = {
+					is_core_of = SPN
+					is_island_state = no
+				}
+				create_unit = {
+					division = "name = \"Guardia Parlamentaria\" division_template = \"Guarnición Parlamentaria\" start_experience_factor = 0.1"
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guardia Parlamentaria\" division_template = \"Guarnición Parlamentaria\" start_experience_factor = 0.1"
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"Guardia Parlamentaria\" division_template = \"Guarnición Parlamentaria\" start_experience_factor = 0.1"
+					owner = PREV
+				}
+			}
+
+			division_template = {
+				name = "Tropas de Choque"
+				is_locked = yes
+				template_counter = 6
+				division_names_group = SPR_INF_02
+				regiments = {
+					infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+				}
+				support = {
+					artillery = { x = 0  y = 0 }
+				}
+			}
+
+			41 = {
+				create_unit = {
+					division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+					owner = PREV
+				}
+				create_unit = {
+					division = "name = \"División de Choque\" division_template = \"Tropas de Choque\" start_experience_factor = 0.2"
+					owner = PREV
+				}
+			}
+
+			retire_country_leader = yes
+			create_country_leader = { #TODO description
+				name = "Senatorial War Council"
+				desc = WAR_COUNCIL_DESC
+				picture = GFX_senate_war_council
+				expire = "1965.1.1"
+				ideology = liberalism
+			}
+
+			##Split the equipment
+			if = {
+				limit = {
+					has_country_flag = SPN_moved_weapons
+				}
+				send_equipment_fraction = {
+					value = 0.45
+					target = UTI
+				}
+			}
+			else = {
+				send_equipment_fraction = {
+					target = UTI
+					value = 0.33
+				}
+			}
+
+			send_equipment_fraction = {
+				target = SKS
+				value = 0.5
+			}
+
+			declare_war_on = {
+				target = SKS
+				type = civil_war
+			}
+			add_civil_war_target = SKS
+			declare_war_on = {
+				target = UTI
+				type = civil_war
+			}
+			add_civil_war_target = UTI
+
+			SKS = {
+				declare_war_on = {
+					target = UTI
+					type = civil_war
+				}
+				add_civil_war_target = UTI
+			}
+		}
+	}
+		
+
+	option = { #Ophite option
+		name = SPN.1.a
+		trigger = { has_completed_focus = SPN_cult_of_ophitism }
+		hidden_effect = {
+			SPN = {
+				unlock_national_focus = SPN_the_kings_parliment
+				unlock_national_focus = SPN_seize_madrid_factories
+			}
+		}
+
+		SKS = {
+			change_tag_from = ROOT
+		}
+	}
+
+	option = { #Monarchist option
+		name = SPN.1.b
+		trigger = { 
+			NOT = {
+				OR = {
+					has_completed_focus = SPN_cult_of_ophitism
+					has_completed_focus = SPN_UTI
+				}
+			}
+		}
+	}
+
+	option = { #Ophite option
+		name = SPN.1.c
+		trigger = { has_completed_focus = SPN_UTI }
+		hidden_effect = {
+			SPN = {
+				unlock_national_focus = SPN_the_kings_parliment
+				unlock_national_focus = SPN_seize_madrid_factories
+			}
+		}
+
+		UTI = {
+			change_tag_from = ROOT
+		}
+	}
+}
+
+country_event = { #Petition Byzantium for aid
+	id = SPN.2
+	title = "Petition Byzantium for Aid"
+	desc = SPN.2.D
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = SPN.2.A 
+
+		send_equipment = {
+			equipment = infantry_equipment
+			amount = 1500
+			target = UTI
+		}
+		send_equipment = {
+			equipment = artillery_equipment
+			amount = 40
+			target = UTI
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+
+		UTI = {
+			country_event = {
+				id = SPN.3
+				days = 5
+			}
+		}
+	}
+
+	option = { #No
+		name = SPN.2.B
+
+		ai_chance = {
+			factor = 0
+		}
+
+		UTI = {
+			country_event = {
+				id = SPN.4
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #Byzantium accepts
+	id = SPN.3
+	title = SPN.3.T
+	desc = SPN.3.D
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = SPN.3.A 
+	}
+}
+
+country_event = { #Byzantium refuses
+	id = SPN.4
+	title = SPN.4.T
+	desc = SPN.4.D
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = SPN.4.A 
+	}
+}
+
+country_event = { #Petition France for aid
+	id = SPN.5
+	title = "Petition France for Aid"
+	desc = SPN.5.D
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = SPN.5.A 
+		add_ideas = SPN_francian_intervention
+		SPN = {
+			add_equipment_to_stockpile = { type = infantry_equipment_1 amount = 1500 producer = FRA }
+			add_equipment_to_stockpile = { type = artillery_equipment_1 amount = 40 producer = FRA }
+		}
+
+		ai_chance = {
+			factor = 20
+		}
+
+		SPN = {
+			country_event = {
+				id = SPN.6
+				days = 5
+			}
+		}
+	}
+
+	option = { #No
+		name = SPN.5.B
+
+		ai_chance = {
+			factor = 0
+		}
+
+		SPN = {
+			country_event = {
+				id = SPN.7
+				days = 5
+			}
+		}
+	}
+}
+
+country_event = { #France accepts
+	id = SPN.6
+	title = SPN.6.T
+	desc = SPN.6.D
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = SPN.6.A 
+		effect_tooltip = {
+			FRA = {
+				send_equipment = {
+					equipment = infantry_equipment
+					amount = 1500
+					target = SPN
+				}
+				send_equipment = {
+					equipment = artillery_equipment
+					amount = 40
+					target = SPN
+				}
+			}
+		}
+	}
+}
+
+country_event = { #France refuses
+	id = SPN.7
+	title = SPN.7.T
+	desc = SPN.7.D
+
+	is_triggered_only = yes
+
+	option = { #Yes
+		name = SPN.7.A 
+	}
+}
+
+country_event = { #End of civil war
+	id = SPN.8
+	title = SPN.8.T
+	desc = SPN.8.D
+
+	fire_only_once = yes
+
+	trigger = {
+		OR = {
+			tag = SPN
+			tag = SKS
+			tag = UTI
+		}
+		has_global_flag = SPN_civil_war
+		has_civil_war = no		
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = SKS
+				}
+	
+				delete_units = {
+					division_template = "Tropas de Choque"
+					disband = yes
+				}
+				delete_units = {
+					division_template = "Guarnición Ophitista"
+					disband = yes
+				}
+	
+
+			}
+	
+			else_if = {
+				limit = {
+					tag = SPN
+				}
+	
+				delete_units = {
+					division_template = "Tropas de Choque"
+					disband = yes
+				}
+				delete_units = {
+					division_template = "Guarnición Parlamentaria"
+					disband = yes
+				}
+			}
+	
+			else_if = {
+				limit = {
+					tag = UTI
+				}
+	
+				delete_units = {
+					division_template = "Tropas de Choque"
+					disband = yes
+				}
+				delete_units = {
+					division_template = "Guarnición Colectivista"
+					disband = yes
+				}
+			} 
+	
+			set_global_flag = SPN_end_civil_war
+
+			#Convert some mils to civies 
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+					is_in_home_area = yes
+					non_damaged_building_level = {
+						building = arms_factory
+						level > 1
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+					is_in_home_area = yes
+					non_damaged_building_level = {
+						building = arms_factory
+						level > 1
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+					is_in_home_area = yes
+					non_damaged_building_level = {
+						building = arms_factory
+						level > 1
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = PREV
+					is_in_home_area = yes
+					non_damaged_building_level = {
+						building = arms_factory
+						level > 1
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = 1
+				}
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			
+		}
+
+		if = {
+			limit = {
+				tag = SPN
+			}
+			retire_country_leader = yes
+			create_country_leader = {
+				name = "Penelope IV Byzantius"
+				desc = PENELOPE_DESC
+				picture = GFX_penelope_byzantius
+				expire = "1965.1.1"
+				ideology = conservatism
+				female = yes
+			}
+		}
+	}
+
+	option = {
+		name = SPN.8.A
+		
+		add_stability = 0.1
+		if = {
+			limit = {
+				tag = SKS
+			}
+			add_ideas = SPN_national_debt
+			remove_ideas = SPN_low_public_support
+			#Complete end of war focus
+		}
+		else_if = {
+			limit = {
+				tag = SPN
+			}
+
+			complete_national_focus = SPN_SPN_win_war
+		}
+		else = {
+			# tag = UTI
+			add_ideas = SPN_national_debt
+			add_ideas = SPN_government_confustion
+			remove_ideas = SPN_disorganized_army
+			complete_national_focus = SPN_UTI_win_war
+		}
+	}
+}
+
+country_event = { #Demand Balaeric Islands
+	id = SPN.9
+	title = "Iberia Demands Balaeric Islands"
+	desc = SPN.9.D
+
+	is_triggered_only = yes
+
+	option = { #Cede the Islands
+		name = SPN.9.A
+		add_political_power = -10
+		177 = {
+			transfer_state_to = SPN
+			add_core_of = SPN
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+country_event = { #Demand old territory
+	id = SPN.10
+	title = "Iberia Demands Ancient Territory"
+	desc = SPN.10.D
+
+	is_triggered_only = yes
+
+	option = { #Cede the Provinces
+		name = SPN.10.A
+		add_political_power = -10
+		837 = {
+			transfer_state_to = SPN
+			add_core_of = SPN
+		}
+		806 = {
+			transfer_state_to = SPN
+			add_core_of = SPN
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+country_event = { #Demand New Zealand
+	id = SPN.11
+	title = "Iberia Demands New Zealand"
+	desc = SPN.11.D
+
+	is_triggered_only = yes
+
+	option = { #Cede ths Islands
+		add_political_power = -10
+		end_puppet = NZL
+		SPN = {
+			puppet = NZL
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+# 12 - 16 copied from portugal file, 14 and 15 need new localizaton
+# Event for Brazil when Spain triggers the Monarchist Civil War
+country_event = {
+	id = SPN.12
+	title = lar_portugal_promote_monarchist_cause.3.t
+
+	desc = {
+		text = lar_portugal_promote_monarchist_cause.3.desc #Pro-Monarchist
+		trigger = {
+			has_country_flag = POR_brazil_supports_monarchism_flag
+		}
+	}
+
+	desc = {
+		text = lar_portugal_promote_monarchist_cause.3.desc_anti_monarchist #Pro-Monarchist
+		trigger = {
+			NOT = { has_country_flag = POR_brazil_supports_monarchism_flag }
+		}
+	}
+
+	picture = GFX_report_event_generic_rifles
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+			if = { #BRA player is Monarchist
+				limit = {
+					has_country_flag = POR_brazil_supports_monarchism_flag
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+				add_popularity = { ideology = neutrality popularity = 0.5 }
+				set_country_flag = EOB_empire_of_brazil_flag
+				set_cosmetic_tag = EOB_empire_brazil_neutrality
+				create_country_leader = {
+					name = "Prince Pedro Henrique"
+					desc = "POLITICS_PRINCE_PEDRO_HENRIQUE_DESC"
+					picture = GFX_portrait_Prince_Pedro_Henrique
+					expire = "1981.07.05"
+					ideology = despotism
+					traits = {
+						inexperienced_monarch
+					}					
+				}
+				set_temp_variable = { POR_bra_monarchist_cw_opposition = party_popularity@fascism }
+				add_to_temp_variable = { POR_bra_monarchist_cw_opposition = party_popularity@communism }
+				add_to_temp_variable = { POR_bra_monarchist_cw_opposition = party_popularity@democratic }
+				start_civil_war = {
+					ideology = fascism
+					size = POR_bra_monarchist_cw_opposition
+					capital = 501
+					states = { 495 497 498 499 280 502 503 504 505 }
+				}
+				random_country = {
+					limit = {
+						original_tag = BRA
+						has_government = fascism
+					}
+					SPN = { 
+						add_to_war = { targeted_alliance = BRA enemy = PREV hostility_reason = asked_to_join }
+						hidden_effect = {
+							diplomatic_relation = {
+								country = BRA
+								relation = military_access
+								active = yes
+							}
+						}
+					}
+				}
+				BRA = {
+					set_party_name = { 
+					    ideology = fascism
+					    long_name = BRA_fascism_party_long
+					    name = BRA_fascism_party
+					}
+					create_country_leader = {
+						name = "Plínio Salgado"
+						desc = "POLITICS_PLINIO_SALGADO_DESC"
+						picture = GFX_portrait_Plinio_Salgado
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							#
+						}
+					}
+					effect_tooltip = {
+						give_military_access = SPN
+					}
+					hidden_effect = {
+						diplomatic_relation = {
+							country = SPN
+							relation = military_access
+							active = yes
+						}
+					}
+					add_opinion_modifier = {
+						target = SPN
+						modifier = POR_helped_in_civil_war
+					}
+					set_global_flag = POR_portugal_joined_brazilian_civil_war_flag
+				}
+			}
+			else = { #BRA player is Anti-Monarchist
+				set_temp_variable = { POR_bra_monarchist_cw_opposition = party_popularity@neutrality }
+				add_to_temp_variable = { POR_bra_monarchist_cw_opposition = party_popularity@communism }
+				add_to_temp_variable = { POR_bra_monarchist_cw_opposition = party_popularity@democratic }
+				start_civil_war = {
+					ideology = neutrality
+					size = POR_bra_monarchist_cw_opposition
+					capital = 501
+					states = { 495 497 280 502 503 504 505 }
+				}
+				if = {
+					limit = {
+						NOT = { has_government = fascism }
+					}
+					set_politics = {
+						ruling_party = neutrality
+					}
+				}
+				random_country = {
+					limit = {
+						original_tag = BRA
+						has_government = neutrality
+					}
+					set_country_flag = EOB_empire_of_brazil_flag
+					set_cosmetic_tag = EOB_empire_brazil_neutrality
+					create_country_leader = {
+						name = "Prince Pedro Henrique"
+						desc = "POLITICS_PRINCE_PEDRO_HENRIQUE_DESC"
+						picture = GFX_portrait_Prince_Pedro_Henrique
+						expire = "1981.07.05"
+						ideology = despotism
+						traits = {
+							inexperienced_monarch
+						}					
+					}
+					create_country_leader = {
+						name = "Plínio Salgado"
+						desc = "POLITICS_PLINIO_SALGADO_DESC"
+						picture = GFX_portrait_Plinio_Salgado
+						expire = "1965.1.1"
+						ideology = fascism_ideology
+						traits = {
+							#
+						}
+					}
+					set_party_name = {
+					    ideology = fascism
+					    long_name = BRA_fascism_party_long
+					    name = BRA_fascism_party
+					}
+					SPN = { 
+						add_to_war = { targeted_alliance = PREV enemy = BRA hostility_reason = asked_to_join }
+						effect_tooltip = {
+							give_military_access = PREV
+						}
+						hidden_effect = {
+							diplomatic_relation = {
+								country = PREV
+								relation = military_access
+								active = yes
+							}
+						}
+					}
+					effect_tooltip = {
+						give_military_access = SPN
+					}
+					hidden_effect = {
+						diplomatic_relation = {
+							country = SPN
+							relation = military_access
+							active = yes
+						}
+					}
+					add_opinion_modifier = {
+						target = SPN
+						modifier = POR_helped_in_civil_war
+					}
+					set_global_flag = POR_portugal_joined_brazilian_civil_war_flag
+				}
+			}
+		}
+	}
+
+	option = { #CW - BRA player is Monarchist
+		name = lar_portugal_promote_monarchist_cause.3.a
+		
+		trigger = {
+			has_country_flag = POR_brazil_supports_monarchism_flag
+		}
+		effect_tooltip = {
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = { ideology = neutrality popularity = 0.5 }
+			set_country_flag = EOB_empire_of_brazil_flag
+			set_cosmetic_tag = EOB_empire_brazil_neutrality
+			create_country_leader = {
+				name = "Prince Pedro Henrique"
+				desc = "POLITICS_PRINCE_PEDRO_HENRIQUE_DESC"
+				picture = GFX_portrait_Prince_Pedro_Henrique
+				expire = "1981.07.05"
+				ideology = despotism
+				traits = {
+					inexperienced_monarch
+				}					
+			}
+			start_civil_war = {
+				ideology = fascism
+			}
+			random_country = {
+				limit = {
+					original_tag = BRA
+					has_government = fascism
+				}
+				POR = { 
+					add_to_war = { targeted_alliance = BRA enemy = PREV hostility_reason = asked_to_join }
+					give_military_access = BRA
+				}
+			}
+			BRA = {
+				give_military_access = POR
+				add_opinion_modifier = {
+					target = POR
+					modifier = POR_helped_in_civil_war
+				}
+			}
+		}
+		custom_effect_tooltip = lar_portugal_promote_monarchist_cause.3.a_tt
+	}
+
+	option = { #CW - BRA is Fascist
+		name = lar_portugal_promote_monarchist_cause.3.b
+		
+		trigger = {
+			NOT = { has_country_flag = POR_brazil_supports_monarchism_flag }
+		}
+		
+		effect_tooltip = {
+			start_civil_war = {
+				ideology = neutrality
+			}
+			if = {
+				limit = {
+					NOT = { has_government = fascism }
+				}
+				set_politics = {
+					ruling_party = neutrality
+				}
+			}
+			random_country = {
+				limit = {
+					original_tag = BRA
+					has_government = neutrality
+				}
+				set_country_flag = EOB_empire_of_brazil_flag
+				set_cosmetic_tag = EOB_empire_brazil_neutrality
+				create_country_leader = {
+					name = "Prince Pedro Henrique"
+					desc = "POLITICS_PRINCE_PEDRO_HENRIQUE_DESC"
+					picture = GFX_portrait_Prince_Pedro_Henrique
+					expire = "1981.07.05"
+					ideology = despotism
+					traits = {
+						inexperienced_monarch
+					}					
+				}
+				SPN = { 
+					add_to_war = { targeted_alliance = PREV enemy = BRA hostility_reason = asked_to_join }
+					give_military_access = PREV
+				}
+				give_military_access = SPN
+				add_opinion_modifier = {
+					target = SPN
+					modifier = POR_helped_in_civil_war
+				}
+			}
+		}
+		custom_effect_tooltip = lar_portugal_promote_monarchist_cause.3.b_tt
+	}
+}
+
+# Event for Brazil when Portugal completes "The Empire of Brazil" focus and changes Brazil's government peacefully
+country_event = {
+	id = SPN.13
+	title = lar_portugal_promote_monarchist_cause.4.t
+	desc = lar_portugal_promote_monarchist_cause.4.desc
+	picture = GFX_report_event_por_return_of_the_monarchy
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_portugal_promote_monarchist_cause.4.a
+		
+		add_stability = -0.2
+		set_country_flag = EOB_empire_of_brazil_flag
+		set_cosmetic_tag = EOB_empire_brazil_neutrality
+		create_country_leader = {
+			name = "Prince Pedro Henrique"
+			desc = "POLITICS_PRINCE_PEDRO_HENRIQUE_DESC"
+			picture = GFX_portrait_Prince_Pedro_Henrique
+			expire = "1981.07.05"
+			ideology = despotism
+			traits = {
+				inexperienced_monarch
+			}					
+		}
+		if = {
+			limit = { NOT = { has_government = neutrality } }
+			set_politics = {
+				ruling_party = neutrality
+			}
+			add_popularity = { ideology = neutrality popularity = 0.15 }
+		}
+		create_country_leader = {
+			name = "Plínio Salgado"
+			desc = "POLITICS_PLINIO_SALGADO_DESC"
+			picture = GFX_portrait_Plinio_Salgado
+			expire = "1965.1.1"
+			ideology = fascism_ideology
+			traits = {
+				#
+			}
+		}
+	}
+}
+
+# Event for Portugal when Brazil accepts to get annexed
+country_event = { #TODO: Since these (14 and 15) are player facing events, rework localization
+	id = SPN.14
+	title = lar_portugal_promote_monarchist_cause.5.t
+	desc = lar_portugal_promote_monarchist_cause.5.desc
+	picture = GFX_report_event_por_return_of_the_monarchy
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_portugal_promote_monarchist_cause.5.a
+	}
+}
+
+# Event for Portugal when Brazil refuses to get annexed
+country_event = {
+	id = SPN.15
+	title = lar_portugal_promote_monarchist_cause.6.t
+	desc = lar_portugal_promote_monarchist_cause.6.desc
+	picture = GFX_report_event_por_return_of_the_monarchy
+
+	is_triggered_only = yes
+
+	option = {
+		name = lar_portugal_promote_monarchist_cause.6.a
+		effect_tooltip = {
+			create_wargoal = {
+			  	target = BRA
+			    type = annex_everything
+			}
+		}
+	}
+}
+
+country_event = {
+	id = SPN.16
+	title = lar_portugal_promote_monarchist_cause.2.t
+	desc = lar_portugal_promote_monarchist_cause.2.desc
+	picture = GFX_report_event_por_president_military_inspection
+
+	is_triggered_only = yes
+
+	option = { # Accept
+		name = lar_portugal_promote_monarchist_cause.2.a
+		ai_chance = {
+			factor = 80
+			modifier = { #Not non-aligned Brazil will never accept
+				factor = 0
+				NOT = { has_government = neutrality }
+			}
+		}
+		
+		hidden_effect = {
+			SPN = { news_event = { id = lar_news.26 days = 3 random_days = 5 } }
+			every_state = {
+				limit = { is_core_of = BRA }
+				add_core_of  = SPN
+			}
+		}
+		SPN = {
+			country_event = SPN.14
+			annex_country = { 
+				target = ROOT
+				transfer_troops = yes
+			}
+		}
+		custom_effect_tooltip = POR_kingdom_reunited_tooltip_tt
+		custom_effect_tooltip = GAME_OVER_TT
+	}
+
+	option = { # Refuse
+		name = lar_portugal_promote_monarchist_cause.2.b
+		ai_chance = {
+			factor = 20
+			modifier = { # If POR helped during the CW, Monarchist BRA will be willing to accept
+				factor = 0
+				has_global_flag = POR_portugal_joined_brazilian_civil_war_flag
+				has_government = neutrality
+			}
+		}
+		SPN = {
+			create_wargoal = {
+			  	target = ROOT
+			    type = annex_everything
+			}
+			hidden_effect = { country_event = SPN.15 }
+		}		
+	}
+}
+
+#17
+country_event = { #Demand Sardinia & Corsica
+	id = SPN.17
+	title = "Spain Demands Sardinia & Corsica"
+	desc = SPN.17.D
+
+	is_triggered_only = yes
+
+	option = { #Cede the Islands
+		name = SPN.17.A
+		add_political_power = -10
+		1 = {
+			transfer_state_to = SPN
+		}
+		114 = {
+			transfer_state_to = SPN
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#18
+country_event = { #Demand Crete and Cyprus
+	id = SPN.18
+	title = "Iberia Demands Crete and Cyprus"
+	desc = SPN.18.D
+
+	is_triggered_only = yes
+
+	option = { #Cede the Islands
+		name = SPN.18.A
+		add_political_power = -10
+		182 = {
+			transfer_state_to = SPN
+		}
+		183 = {
+			transfer_state_to = SPN
+		}
+		ai_chance = {
+			factor = 40
+		}
+	}
+}
+
+#19
+country_event = { #War debt paymets
+	id = SPN.19
+	title = SPN.19.T
+	desc = SPN.19.D
+
+	is_triggered_only = yes
+	option = {
+		name = SPN.19.A
+		add_timed_idea = {
+			idea = SPN_war_debt_payments
+			days = 365
+		}
+	}
+}
+country_event = { #War debt paymets
+	id = SPN.20
+	title = SPN.20.t
+	desc = SPN.20.d
+
+	trigger = {
+		tag = SPN
+	}
+	mean_time_to_happen = {
+		days = 15
+	}
+
+	fire_only_once = yes
+	option = {
+		name = SPN.20.a
+		add_stability = 0.01
+	}
+}

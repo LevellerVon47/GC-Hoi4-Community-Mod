@@ -1,0 +1,8 @@
+technology_categories = {
+	snek_tech
+}
+technology_folders = {
+	snek_folder = {
+		ledger = army
+	}
+}

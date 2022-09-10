@@ -1,0 +1,131 @@
+characters={
+	SPN_bjorn = {
+		name = "Björn"
+		portraits = {
+			army = {
+				large="gfx/leaders/SPN/portrait_björn.tga"
+				small="GFX_advisor_björn" 
+			}
+		}
+		field_marshal={
+			traits={ brilliant_strategist trait_cautious politically_connected defensive_doctrine }
+			skill=3
+			attack_skill=2
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=2
+		}
+	}
+	SPN_alex = {
+		name = "Grant Campaña"
+		portraits = {
+			army = {
+				large="gfx/leaders/SPN/portrait_alex.tga"
+				small="GFX_advisor_alex" 
+			}
+		}
+		corps_commander={
+			traits={ trait_reckless media_personality armor_officer war_hero trickster }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=2
+			logistics_skill=3
+		}
+		# advisor={
+		# 	slot = high_command
+		# 	idea_token = SPN_alex
+		# 	ledger = army
+		# 	allowed = {
+		# 		original_tag = SPN
+		# 	}
+		# 	traits = {
+		# 		army_armored_3
+		# 	}
+		# 	cost = 200
+		# }
+	}
+	SPN_david = {
+		name = "David"
+		portraits = {
+			army = {
+				large="gfx/leaders/SPN/portrait_david.tga"
+				small="GFX_advisor_david" 
+			}
+		}
+		corps_commander = {
+			skill = 3
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 3
+			traits = { infantry_officer }
+		}
+		# advisor={
+		# 	slot = army_chief
+		# 	idea_token = SPN_david
+		# 	allowed = {
+		# 		original_tag = SPN
+		# 	}
+		# 	traits = {
+		# 		army_chief_drill_2
+		# 	}
+		# 	cost = 100
+		# 	ai_will_do = {
+		# 		factor = 1.000
+		# 	}
+		# }	
+	}
+	SPN_ewan = {
+		name = "Ewan"
+		portraits = {
+			army = {
+				large="gfx/leaders/SPN/portrait_ewan.tga"
+				small="GFX_advisor_ewan" 
+			}
+		}
+		corps_commander={
+			traits={ infantry_officer }
+			skill=3
+			attack_skill=3
+			defense_skill=2
+			planning_skill=3
+			logistics_skill=2
+		}
+	}
+	SPN_mordred = {
+		name = "Mordred"
+		portraits = {
+			army = {
+				large="gfx/leaders/SPN/portrait_mordred.tga"
+				small="GFX_advisor_mordred" 
+			}
+		}
+		corps_commander={
+			traits={ brilliant_strategist trait_reckless armor_officer media_personality_Invader }
+			skill=4
+			attack_skill=2
+			defense_skill=3
+			planning_skill=4
+			logistics_skill=4
+		}
+	}
+	SPN_troy = {
+		name = "Troy"
+		portraits = {
+			army = {
+				large="gfx/leaders/SPN/portrait_troy.tga"
+				small="GFX_advisor_troy" 
+			}
+		}
+		corps_commander={
+			traits={ media_personality armor_officer trickster trait_engineer }
+			skill=4
+			attack_skill=2
+			defense_skill=4
+			planning_skill=3
+			logistics_skill=4
+		}
+	}
+	
+}

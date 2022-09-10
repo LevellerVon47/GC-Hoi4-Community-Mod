@@ -1,0 +1,30 @@
+state={
+	id=840
+	name="STATE_840"
+
+	history={
+		owner = TUN
+		victory_points = {
+			7081 1 
+		}
+		victory_points = {
+			12051 3 
+		}
+		buildings = {
+			infrastructure = 2
+			7081 = {
+				naval_base = 1
+			}
+		}
+		add_core_of = TUN
+	}
+
+	provinces={
+		1160 1058 7081 12051 9976 11953
+	}
+	manpower=1562558
+	buildings_max_level_factor=1.000
+	state_category=town
+
+	local_supplies=0.0 
+}
